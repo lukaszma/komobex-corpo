@@ -2,22 +2,22 @@
 import React from "react"
 
 export const About = () => (
-  <div id="about" class="block-section image-block bg-white">
-    <div class="container-fluid container-no-padding">
-      <div class="row row-no-margin">
-        <div class="image-block-item col-md-6 col-sm-5 col-xs-12">
+  <div id="about" className="block-section image-block bg-white">
+    <div className="container-fluid container-no-padding">
+      <div className="row row-no-margin">
+        <div className="image-block-item col-md-6 col-sm-5 col-xs-12">
           <div
-            class="image-block-item-background"
+            className="image-block-item-background"
             style={{ backgroundImage: "url(../../../img-post-content-04.jpg)" }}
           ></div>
         </div>
       </div>
     </div>
 
-    <div class="container clear">
-      <div class="row">
-        <div class="col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-80-top padd-60-btm">
-          <div class="section-title">
+    <div className="container clear">
+      <div className="row">
+        <div className="col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-80-top padd-60-btm">
+          <div className="section-title">
             <h2>Kim jesteśmy?</h2>
           </div>
           <p>
@@ -35,10 +35,10 @@ export const About = () => (
           </p>
           <p>
             <a
-              class="button btn-danger popup-video"
+              className="button btn-danger popup-video"
               href="http://www.youtube.com/watch?v=Og879fOk6DQ"
             >
-              <i class="fa fa-wrench"></i> Learn Our Service
+              <i className="fa fa-wrench"></i> Learn Our Service
             </a>
           </p>
         </div>
