@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, withPrefix } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -61,7 +61,18 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <script src={withPrefix("plugins/jquery.min.js")} type="text/javascript"/>
+      <script src={withPrefix("bootstrap/js/bootstrap.min.js")} type="text/javascript"/>
+      <script src={withPrefix("plugins/parallax.min.js")} type="text/javascript"/>
+      <script src={withPrefix("js/navigation.js")} type="text/javascript"/>
+      <script src={withPrefix("plugins/jquery.easing.js")} type="text/javascript"/>
+      <script src={withPrefix("plugins/jquery.magnific-popup.min.js")} type="text/javascript"/>
+      <script src={withPrefix("plugins/imagesloaded.pkgd.min.js")} type="text/javascript"/>
+      <script src={withPrefix("plugins/isotope.pkgd.min.js")} type="text/javascript"/>
+      <script src={withPrefix("plugins/owl.carousel.min.js")} type="text/javascript"/>
+      <script src={withPrefix("js/script.min.js")} type="text/javascript"/>
+    </Helmet>
   )
 }
 
