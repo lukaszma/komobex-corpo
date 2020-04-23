@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
 
 export const Work = () => <div id="work" className="work content-section bg-grey">
@@ -83,7 +82,7 @@ export const Work = () => <div id="work" className="work content-section bg-grey
               <img src="../../../img-work-06.jpg" alt="Papa Ron's Restaurant"/>
             </div>
             <div className="work-item-info">
-              <h4 className="work-item-title">Papa Ron's Restaurant</h4>
+              <h4 className="work-item-title">{"Papa Ron's Restaurant"}</h4>
               <span className="work-item-desc">Interior Design</span>
             </div>
           </a>

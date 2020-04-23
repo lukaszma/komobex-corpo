@@ -3,9 +3,11 @@ import Layout from "@components/layout/layout"
 import { MainPage } from "@screens/mainPage/mainPage"
 
 const IndexPage = () => (
-  <Layout>
-    <MainPage />
-  </Layout>
+  <div id="home" className="home">
+    <Layout>
+      <MainPage />
+    </Layout>
+  </div>
 )
 
 export default IndexPage

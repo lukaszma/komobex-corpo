@@ -1,10 +1,19 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
 import PropTypes from "prop-types"
 
-const Header = ({ siteTitle }) => (
-  <div className="header header-page">
-    <div id="topbar" className="topbar topbar-page">
+const Header = () => (
+  <div
+    className="header"
+    data-parallax="scroll"
+    data-image-src="../../../img-header.jpg"
+    style={{
+      backgroundImage: "url('../../../img-header.jpg)",
+      backgroundAttachment: "fixed",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "contain",
+    }}
+  >
+    <div id="topbar" className="topbar">
       <div className="container">
         <div className="row">
           <div className="col-sm-8">
@@ -37,7 +46,7 @@ const Header = ({ siteTitle }) => (
       </div>
     </div>
     <div className="site-header-affix-wrapper">
-      <header id="masthead" className="site-header header-dark" role="banner">
+      <header id="masthead" className="site-header" role="banner">
         <div className="container">
           <div className="row">
             <div className="col-sm-3">
@@ -77,9 +86,7 @@ const Header = ({ siteTitle }) => (
                     aria-expanded="false"
                   >
                     <li className="menu-item current-menu-item">
-                      <a href="#">
-                        Strona główna
-                      </a>
+                      <a href="#">Strona główna</a>
                     </li>
                     <li className="menu-item">
                       <a href="#">O firmie</a>
@@ -94,9 +101,7 @@ const Header = ({ siteTitle }) => (
                           <a href="#">Wszystkie usługi</a>
                         </li>
                         <li className="menu-item">
-                          <a href="#">
-                            Doradztwo budowlane
-                          </a>
+                          <a href="#">Doradztwo budowlane</a>
                         </li>
                         <li className="menu-item">
                           <a href="#">Wynajem mieszkań</a>
@@ -105,9 +110,7 @@ const Header = ({ siteTitle }) => (
                           <a href="#">Hydraulika</a>
                         </li>
                         <li className="menu-item">
-                          <a href="#">
-                            Wentylacja i klimatyzacja
-                          </a>
+                          <a href="#">Wentylacja i klimatyzacja</a>
                         </li>
                         <li className="menu-item">
                           <a href="#">Usługi dźwigowe</a>

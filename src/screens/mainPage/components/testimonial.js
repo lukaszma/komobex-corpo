@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
 
 export const Testimonial = () => (
@@ -51,7 +50,7 @@ export const Testimonial = () => (
               </div>
               <div className="item">
                 <p>
-                  I don't know what else to say. It had everything we wanted and
+                  I {"don't"} know what else to say. It had everything we wanted and
                   was better designed than anything we could have accomplished
                   on our own. Thanks for the great work.
                 </p>

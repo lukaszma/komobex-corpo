@@ -64,13 +64,13 @@ function SEO({ description, lang, meta, title }) {
     >
       <script src={withPrefix("plugins/jquery.min.js")} type="text/javascript"/>
       <script src={withPrefix("bootstrap/js/bootstrap.min.js")} type="text/javascript"/>
-      <script src={withPrefix("plugins/parallax.min.js")} type="text/javascript"/>
       <script src={withPrefix("js/navigation.js")} type="text/javascript"/>
       <script src={withPrefix("plugins/jquery.easing.js")} type="text/javascript"/>
       <script src={withPrefix("plugins/jquery.magnific-popup.min.js")} type="text/javascript"/>
       <script src={withPrefix("plugins/imagesloaded.pkgd.min.js")} type="text/javascript"/>
       <script src={withPrefix("plugins/isotope.pkgd.min.js")} type="text/javascript"/>
       <script src={withPrefix("plugins/owl.carousel.min.js")} type="text/javascript"/>
+      <script src={withPrefix("plugins/parallax.min.js")} type="text/javascript"/>
       <script src={withPrefix("js/script.min.js")} type="text/javascript"/>
     </Helmet>
   )

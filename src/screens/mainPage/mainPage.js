@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
 import { Service } from "./components/service"
 import { Work } from "./components/work"
