@@ -4,10 +4,8 @@ import PropTypes from "prop-types"
 const Header = () => (
   <div
     className="header"
-    data-parallax="scroll"
-    data-image-src="../../../img-header.jpg"
     style={{
-      backgroundImage: "url('../../../img-header.jpg)",
+      backgroundImage: "url('../../../img-header.jpg')",
       backgroundAttachment: "fixed",
       backgroundRepeat: "no-repeat",
       backgroundSize: "contain",
