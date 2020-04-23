@@ -8,7 +8,7 @@ const Header = () => (
       backgroundImage: "url('../../../img-header.jpg')",
       backgroundAttachment: "fixed",
       backgroundRepeat: "no-repeat",
-      backgroundSize: "contain",
+      backgroundSize: "cover",
     }}
   >
     <div id="topbar" className="topbar">
