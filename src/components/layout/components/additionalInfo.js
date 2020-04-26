@@ -22,7 +22,7 @@ const AdditionalInfo = () => (
             <div className="contact-item-icon">
               <i className="fa fa-envelope-o"></i>
             </div>
-            <h4 className="contact-item-title">Adres e-mail:</h4>
+            <h4 className="contact-item-title">E-mail:</h4>
             <div className="contact-item-info">komobexinel@post.pl</div>
           </div>
         </div>
@@ -32,7 +32,7 @@ const AdditionalInfo = () => (
             <div className="contact-item-icon">
               <i className="fa fa-map-marker"></i>
             </div>
-            <h4 className="contact-item-title">Lokalizacja biura:</h4>
+            <h4 className="contact-item-title">Adres:</h4>
             <div className="contact-item-info">
               Częstochowa ul. Dekabrystów 41
             </div>

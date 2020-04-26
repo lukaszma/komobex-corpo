@@ -52,7 +52,7 @@ export const Service = () => (
             </div>
             <div className="blog-entry-content">
               <p>
-                Świadczymy usługi w instalacjach wentylacyjno klimatyzacyjnej dla obiektów przemysłowych
+                Świadczymy usługi w instalacjach wentylacyjnych i klimatyzacyjnych dla obiektów przemysłowych
               </p>
               <p>
                 <a href="#" className="read-more">

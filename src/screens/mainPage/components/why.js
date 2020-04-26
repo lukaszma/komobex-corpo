@@ -39,13 +39,10 @@ export const Why = () => (
               <span className="process-item-number">2</span>
               <h3 className="process-item-title">DOŚWIADCZENIE</h3>
               <p>
-                Ponad 25 lat na rynku oraz ponad 150 wykwalifikowanych
-                pracowników w tym 15 inżynierów z wieloletnim doświadczeniem
-                realizuje jako generalny wykonawca lub podwykonawca wiele zadań
-                z zakresu inwestycji budownictwa ogólnego, komunalnego i
-                przemysłowego.
-                {/* Wieloletnie doświadczenie w zakresie budownictwa ogólnego
-                gwarantuje realizacje powierzonych prac na najwyższym poziomie. */}
+                Firma instniejąca na rynku przeszło 25 lat wraz z kadrą ponad
+                150 wykwalifikowanych pracowników, realizuje jako generalny
+                wykonawca lub podwykonawca wiele zadań z zakresu inwestycji
+                budownictwa ogólnego, komunalnego i przemysłowego.
               </p>
             </div>
           </div>

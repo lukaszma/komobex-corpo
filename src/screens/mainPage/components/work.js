@@ -15,7 +15,7 @@ export const Work = () => (
         <div className="col-md-12">
           <ul className="work-filter">
             <li className="active" data-filter="*">
-              <a href="#">Wszytskie</a>
+              <a href="#">Wszystkie</a>
             </li>
             <li data-filter=".wik">
               <a href="#">wentylacja i klimatyzacja</a>

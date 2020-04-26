@@ -10,9 +10,9 @@ import { Client } from "./components/client"
 export const MainPage = () => (
   <>
     <Service />
-    <Work />
-    <CallToAction />
     <About />
+    <CallToAction />
+    <Work />
     <Why />
     <Testimonial />
     <Client />
