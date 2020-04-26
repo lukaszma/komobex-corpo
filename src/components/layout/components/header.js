@@ -5,14 +5,14 @@ const Header = () => (
   <div
     className="header"
     style={{
-      backgroundImage: "url('../../../img-header.jpg')",
+      backgroundImage: "url('../../../hero.jpg')",
       backgroundAttachment: "fixed",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
     }}
   >
     <div id="topbar" className="topbar">
-      <div className="container">
+      {/* <div className="container">
         <div className="row">
           <div className="col-sm-8">
             <div className="nav-utility">
@@ -41,7 +41,7 @@ const Header = () => (
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
     <div className="site-header-affix-wrapper">
       <header id="masthead" className="site-header" role="banner">
@@ -96,22 +96,24 @@ const Header = () => (
                       <a href="#">Usługi</a>
                       <ul className="sub-menu">
                         <li className="menu-item">
-                          <a href="#">Wszystkie usługi</a>
+                          <a href="#">Instalacje wod-kan</a>
                         </li>
                         <li className="menu-item">
-                          <a href="#">Doradztwo budowlane</a>
+                          <a href="#">
+                            Instalacje wentylacyjne i klimatyzacyjne
+                          </a>
                         </li>
                         <li className="menu-item">
-                          <a href="#">Wynajem mieszkań</a>
+                          <a href="#">Instalacje c.o.</a>
                         </li>
                         <li className="menu-item">
-                          <a href="#">Hydraulika</a>
-                        </li>
-                        <li className="menu-item">
-                          <a href="#">Wentylacja i klimatyzacja</a>
+                          <a href="#">Instalacje elektryczne</a>
                         </li>
                         <li className="menu-item">
                           <a href="#">Usługi dźwigowe</a>
+                        </li>
+                        <li className="menu-item">
+                          <a href="#">Wynajem mieszkań</a>
                         </li>
                       </ul>
                     </li>

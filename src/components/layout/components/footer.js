@@ -47,19 +47,22 @@ const Footer = () => (
             <h3 className="widget-title">Nasze usługi</h3>
             <ul>
               <li>
-                <a href="#"> Doradztwo budowlane</a>
+                <a href="#">Instalacje wod-kan</a>
               </li>
               <li>
-                <a href="#">Wynajem mieszkań</a>
+                <a href="#">Instalacje wentylacyjne i klimatyzacyjne</a>
               </li>
               <li>
-                <a href="#">Hydraulika</a>
+                <a href="#">Instalacje c.o</a>
               </li>
               <li>
-                <a href="#">Wentylacja i klimatyzacja</a>
+                <a href="#">Instalacje elektryczne</a>
               </li>
               <li>
                 <a href="#">Usługi dźwigowe</a>
+              </li>
+              <li>
+                <a href="#">Wynajem mieszkań</a>
               </li>
             </ul>
           </section>

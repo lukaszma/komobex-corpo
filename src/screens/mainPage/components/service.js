@@ -7,8 +7,9 @@ export const Service = () => (
         <div className="col-md-4">
           <div className="blog-entry">
             <a href="#" className="blog-entry-thumbnail">
+            {/* https://www.google.com/search?q=instalacje+wod+kan&sxsrf=ALeKk02biDAXqNFw0jYFTjedUDydi8vRMg:1587814130418&source=lnms&tbm=isch&sa=X&ved=2ahUKEwipztnJvIPpAhXU4KYKHe_pC7EQ_AUoAXoECA4QAw&biw=1920&bih=920#imgrc=c61ux9afl1NdpM */}
               <img
-                src="../../../img-service-01.jpg"
+                src="../../../plumbing.jpg"
                 alt="metal roofting"
                 className="img-responsive"
               />
@@ -16,20 +17,17 @@ export const Service = () => (
             <div className="blog-entry-header">
               <h2 className="entry-title">
                 <a href="#" rel="bookmark">
-                  Metal Roofting
+                  Instalacje wodno-kanalizacyjne
                 </a>
               </h2>
             </div>
             <div className="blog-entry-content">
               <p>
-                Construction offer you the best in metal roofing services,
-                supplies and materials to help protect one of your biggest
-                investments you will ever make, your home. There is no better
-                way to protect …
+                Oferujemy instalacje sieci zewnętrznych wodociągowych, deszczowych, sanitarnych i ciepłowniczych
               </p>
               <p>
                 <a href="#" className="read-more">
-                  Read more &#43;
+                  Czytaj więcej &#43;
                 </a>
               </p>
             </div>
@@ -40,7 +38,7 @@ export const Service = () => (
           <div className="blog-entry">
             <a href="#" className="blog-entry-thumbnail">
               <img
-                src="../../../img-service-02.jpg"
+                src="../../../air-condition.jpg"
                 alt="green building"
                 className="img-responsive"
               />
@@ -48,20 +46,17 @@ export const Service = () => (
             <div className="blog-entry-header">
               <h2 className="entry-title">
                 <a href="#" rel="bookmark">
-                  Green Building
+                  Instalacje wentylacyjne i klimatyzacyjne
                 </a>
               </h2>
             </div>
             <div className="blog-entry-content">
               <p>
-                By choosing to build green, you aremaking an effort to reduce
-                the burden on the environment and also add value to your home.
-                Construction provides you with the guidance and the tools that
-                are necessary …
+                Świadczymy usługi w instalacjach wentylacyjno klimatyzacyjnej dla obiektów przemysłowych
               </p>
               <p>
                 <a href="#" className="read-more">
-                  Read more &#43;
+                  Czytaj więcej &#43;
                 </a>
               </p>
             </div>
@@ -79,7 +74,7 @@ export const Service = () => (
               </span>
               <div className="entry-post-content">
                 <h4 className="entry-post-title">
-                  <a href="#">Construction Consultant</a>
+                  <a href="#">Instalacje centralnego ogrzewania</a>
                 </h4>
                 <p>
                   Process of Consultation Whether you know exactly how you ...
@@ -95,7 +90,7 @@ export const Service = () => (
               </span>
               <div className="entry-post-content">
                 <h4 className="entry-post-title">
-                  <a href="#">General Contracting</a>
+                  <a href="#">Instalacje elektryczne</a>
                 </h4>
                 <p>
                   Construction With a reputation built on offering superior ...
@@ -105,13 +100,13 @@ export const Service = () => (
             <li>
               <span className="entry-post-thumbnail">
                 <img
-                  src="../../../img-service-05.jpg"
+                  src="../../../img-service-03.jpg"
                   alt="Construction Management"
                 />
               </span>
               <div className="entry-post-content">
                 <h4 className="entry-post-title">
-                  <a href="#">Construction Management</a>
+                  <a href="#">Usługi dźwigowe</a>
                 </h4>
                 <p>
                   We offer commitment at all levels of building project, from
@@ -125,7 +120,7 @@ export const Service = () => (
               </span>
               <div className="entry-post-content">
                 <h4 className="entry-post-title">
-                  <a href="#">House Renovation</a>
+                  <a href="#">Wynajem mieszkań</a>
                 </h4>
                 <p>
                   Interior There are a number of great reasons to makeover ...

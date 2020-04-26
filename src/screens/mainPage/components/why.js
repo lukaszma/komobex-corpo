@@ -6,7 +6,7 @@ export const Why = () => (
       <div className="row">
         <div className="col-md-12">
           <div className="section-title">
-            <h2>Why Choose Us?</h2>
+            <h2>Dlaczego Komobex Inel?</h2>
           </div>
         </div>
       </div>
@@ -14,16 +14,18 @@ export const Why = () => (
         <div className="col-md-3 col-sm-6">
           <div className="process-item highlight text-center">
             <img
-              src="../../../img-work-01.jpg"
+              src="../../../wroclavia.jpg"
               className="img-responsive"
               alt=""
             />
             <div className="process-item-content">
               <span className="process-item-number">1</span>
-              <h3 className="process-item-title">PASSIONATE</h3>
+              <h3 className="process-item-title">ZAUFANIE</h3>
               <p>
-                A wonderful serenity has taken possession of my entire soul,
-                like these sweet mornings of spring my whole heart.
+                Wielu uznanych inwestorów odpowiedzialnych za reazlizację
+                obiektów tj. Arena Gliwice, Wroclavia, Arena Zabrze, Sagittarius
+                Business House czy Sąd Rejonowy Częstochowa-Północ, zdecydowało
+                się na wspópracę z naszą firmą.
               </p>
             </div>
           </div>
@@ -35,23 +37,29 @@ export const Why = () => (
             </div>
             <div className="process-item-content">
               <span className="process-item-number">2</span>
-              <h3 className="process-item-title">DEPENDABLE</h3>
+              <h3 className="process-item-title">DOŚWIADCZENIE</h3>
               <p>
-                Balancing a composition involves arranging both positive
-                elements and negative space in such a way.
+                Ponad 25 lat na rynku oraz ponad 150 wykwalifikowanych
+                pracowników w tym 15 inżynierów z wieloletnim doświadczeniem
+                realizuje jako generalny wykonawca lub podwykonawca wiele zadań
+                z zakresu inwestycji budownictwa ogólnego, komunalnego i
+                przemysłowego.
+                {/* Wieloletnie doświadczenie w zakresie budownictwa ogólnego
+                gwarantuje realizacje powierzonych prac na najwyższym poziomie. */}
               </p>
             </div>
           </div>
         </div>
         <div className="col-md-3 col-sm-6">
           <div className="process-item highlight text-center">
-            <img src="../../../img-work-04.jpg" className="img-responsive" />
+            <img src="../../../certyfikat.png" className="img-responsive" />
             <div className="process-item-content">
               <span className="process-item-number">3</span>
-              <h3 className="process-item-title">HONEST</h3>
+              <h3 className="process-item-title">WIARYGODNOŚĆ</h3>
               <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia.
+                Uzyskane Certyfikat Wiarygodności Biznesowej oraz tytuł Gazeli
+                Biznesu, świadczy o dobrym zarządzaniu i uczciwości, gwarantując
+                wysoki poziom rentowności, zdolności oraz płynności finansowej.
               </p>
             </div>
           </div>
@@ -63,10 +71,12 @@ export const Why = () => (
             </div>
             <div className="process-item-content">
               <span className="process-item-number">4</span>
-              <h3 className="process-item-title">FRIENDLY</h3>
+              <h3 className="process-item-title">RZETELNOŚĆ</h3>
               <p>
-                One morning, when Gregor Samsa woke from troubled dreams, he
-                found himself transformed.
+                Dzięki wykwalifikowanej kadrze z zastosowaniem własnego,
+                specjalistycznego sprzętu, powierzone nam ralizacje ukończone są
+                zgodnie z założeniami oraz z zastosowaniem aktualnych norm
+                budowlanych.
               </p>
             </div>
           </div>
