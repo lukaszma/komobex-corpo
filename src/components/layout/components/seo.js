@@ -62,6 +62,7 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&display=swap" rel="stylesheet"></link>
       <script src={withPrefix("plugins/jquery.min.js")} type="text/javascript"/>
       <script src={withPrefix("bootstrap/js/bootstrap.min.js")} type="text/javascript"/>
       <script src={withPrefix("js/navigation.js")} type="text/javascript"/>

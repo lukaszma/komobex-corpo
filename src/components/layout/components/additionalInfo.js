@@ -12,7 +12,7 @@ const AdditionalInfo = () => (
             <div className="contact-item-icon">
               <i className="fa fa-phone"></i>
             </div>
-            <h4 className="contact-item-title">Numer telefonu:</h4>
+            <h4 className="contact-item-title">Telefon:</h4>
             <div className="contact-item-info">+48 34 322 65 11</div>
           </div>
         </div>

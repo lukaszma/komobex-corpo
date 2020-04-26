@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Footer = () => (
   <footer id="colophon" className="site-footer bg-black" role="contentinfo">
@@ -24,7 +25,7 @@ const Footer = () => (
             <h3 className="widget-title">Komobex Inel</h3>
             <ul>
               <li>
-                <a href="#">O firmie</a>
+                <Link to="/o-firmie">O firmie</Link>
               </li>
               <li>
                 <a href="#">Usługi</a>

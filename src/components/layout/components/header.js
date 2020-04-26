@@ -1,18 +1,27 @@
-import React from "react"
+/* eslint-disable */
+import React, { useState } from "react"
+import classnames from "classnames"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
+import { Location } from "@reach/router"
 
-const Header = () => (
-  <div
-    className="header"
-    style={{
-      backgroundImage: "url('../../../hero.jpg')",
-      backgroundAttachment: "fixed",
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
-    }}
-  >
-    <div id="topbar" className="topbar">
-      {/* <div className="container">
+const Header = props => {
+  const [activeLink, setActiveLink] = useState("/")
+  console.log(props)
+  return (
+    <Location>
+      {({ location }) => (
+        <div
+          className="header"
+          style={{
+            backgroundImage: "url('../../../hero.jpg')",
+            backgroundAttachment: "fixed",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
+          <div id="topbar" className="topbar">
+            {/* <div className="container">
         <div className="row">
           <div className="col-sm-8">
             <div className="nav-utility">
@@ -42,83 +51,92 @@ const Header = () => (
           </div>
         </div>
       </div> */}
-    </div>
-    <div className="site-header-affix-wrapper">
-      <header id="masthead" className="site-header" role="banner">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-3">
-              <div className="site-branding">
-                <h1 className="site-title title-image">
-                  <a href="#" rel="home">
-                    <img
-                      src="../../../komobex-logo.jpg"
-                      alt="construction business"
-                      className="img-responsive"
-                    />
-                  </a>
-                </h1>
-              </div>
-            </div>
+          </div>
+          <div className="site-header-affix-wrapper">
+            <header id="masthead" className="site-header" role="banner">
+              <div className="container">
+                <div className="row">
+                  <div className="col-sm-3">
+                    <div className="site-branding">
+                      <h1 className="site-title title-image">
+                        <a href="#" rel="home">
+                          <img
+                            src="../../../komobex-logo.jpg"
+                            alt="construction business"
+                            className="img-responsive"
+                          />
+                        </a>
+                      </h1>
+                    </div>
+                  </div>
 
-            <div className="col-sm-9">
-              <nav
-                id="site-navigation"
-                className="main-navigation"
-                role="navigation"
-              >
-                <button
-                  className="menu-toggle"
-                  type="button"
-                  aria-controls="primary-menu"
-                  aria-expanded="false"
-                >
-                  <i className="fa fa-bars"></i>
-                  <span className="pe-7s-menu"></span>
-                  <span className="sr-only">Primary Menu</span>
-                </button>
-
-                <div className="menu-testing-menu-container">
-                  <ul
-                    id="primary-menu"
-                    className="menu nav-menu"
-                    aria-expanded="false"
-                  >
-                    <li className="menu-item current-menu-item">
-                      <a href="#">Strona główna</a>
-                    </li>
-                    <li className="menu-item">
-                      <a href="#">O firmie</a>
-                    </li>
-                    <li
-                      className="menu-item menu-item-has-children"
-                      aria-haspopup="true"
+                  <div className="col-sm-9">
+                    <nav
+                      id="site-navigation"
+                      className="main-navigation"
+                      role="navigation"
                     >
-                      <a href="#">Usługi</a>
-                      <ul className="sub-menu">
-                        <li className="menu-item">
-                          <a href="#">Instalacje wod-kan</a>
-                        </li>
-                        <li className="menu-item">
-                          <a href="#">
-                            Instalacje wentylacyjne i klimatyzacyjne
-                          </a>
-                        </li>
-                        <li className="menu-item">
-                          <a href="#">Instalacje c.o.</a>
-                        </li>
-                        <li className="menu-item">
-                          <a href="#">Instalacje elektryczne</a>
-                        </li>
-                        <li className="menu-item">
-                          <a href="#">Usługi dźwigowe</a>
-                        </li>
-                        <li className="menu-item">
-                          <a href="#">Wynajem mieszkań</a>
-                        </li>
-                      </ul>
-                    </li>
-                    {/* <li
+                      <button
+                        className="menu-toggle"
+                        type="button"
+                        aria-controls="primary-menu"
+                        aria-expanded="false"
+                      >
+                        <i className="fa fa-bars"></i>
+                        <span className="pe-7s-menu"></span>
+                        <span className="sr-only">Primary Menu</span>
+                      </button>
+
+                      <div className="menu-testing-menu-container">
+                        <ul
+                          id="primary-menu"
+                          className="menu nav-menu"
+                          aria-expanded="false"
+                        >
+                          <li
+                            className={classnames("menu-item", {
+                              "current-menu-item": location.pathname === "/",
+                            })}
+                          >
+                            <Link to="/">Strona główna</Link>
+                          </li>
+                          <li
+                            className={classnames("menu-item", {
+                              "current-menu-item":
+                                location.pathname === "/o-firmie",
+                            })}
+                          >
+                            <Link to="/o-firmie">O firmie</Link>
+                          </li>
+                          <li
+                            className="menu-item menu-item-has-children"
+                            aria-haspopup="true"
+                          >
+                            <a href="#">Usługi</a>
+                            <ul className="sub-menu">
+                              <li className="menu-item">
+                                <a href="#">Instalacje wod-kan</a>
+                              </li>
+                              <li className="menu-item">
+                                <a href="#">
+                                  Instalacje wentylacyjne i klimatyzacyjne
+                                </a>
+                              </li>
+                              <li className="menu-item">
+                                <a href="#">Instalacje c.o.</a>
+                              </li>
+                              <li className="menu-item">
+                                <a href="#">Instalacje elektryczne</a>
+                              </li>
+                              <li className="menu-item">
+                                <a href="#">Usługi dźwigowe</a>
+                              </li>
+                              <li className="menu-item">
+                                <a href="#">Wynajem mieszkań</a>
+                              </li>
+                            </ul>
+                          </li>
+                          {/* <li
                       className="menu-item menu-item-has-children"
                       aria-haspopup="true"
                     >
@@ -178,25 +196,28 @@ const Header = () => (
                         </li>
                       </ul>
                     </li> */}
-                    <li className="menu-item">
-                      <a href="#">Realizacje</a>
-                    </li>
-                    <li className="menu-item">
-                      <a href="#">Blog</a>
-                    </li>
-                    <li className="menu-item">
-                      <a href="#">Kontakt</a>
-                    </li>
-                  </ul>
+                          <li className="menu-item">
+                            <a href="#">Realizacje</a>
+                          </li>
+                          <li className="menu-item">
+                            <a href="#">Blog</a>
+                          </li>
+                          <li className="menu-item">
+                            <a href="#">Kontakt</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
                 </div>
-              </nav>
-            </div>
+              </div>
+            </header>
           </div>
         </div>
-      </header>
-    </div>
-  </div>
-)
+      )}
+    </Location>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
