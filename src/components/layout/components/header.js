@@ -73,6 +73,7 @@ const Header = () => (
                   aria-controls="primary-menu"
                   aria-expanded="false"
                 >
+                  <i className="fa fa-bars"></i>
                   <span className="pe-7s-menu"></span>
                   <span className="sr-only">Primary Menu</span>
                 </button>
