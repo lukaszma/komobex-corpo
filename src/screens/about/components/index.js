@@ -1,3 +1,2 @@
-export * from "./breadcrumbs"
-export * from "./mainTitle"
+export * from "../../../components/pageTitle/pageTitle"
 export * from "./contentSection"

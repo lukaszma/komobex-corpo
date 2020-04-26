@@ -1,13 +1,12 @@
 import React from "react"
 import Layout from "@components/layout/layout"
-import { AboutScreen } from "@screens/about/about"
 
-const About = () => (
+const NotFound = () => (
   <div id="home" className="home">
     <Layout>
-      <AboutScreen />
+      <p>Strona nie istnieje</p>
     </Layout>
   </div>
 )
 
-export default About
+export default NotFound

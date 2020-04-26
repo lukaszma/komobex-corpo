@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "@components/layout/layout"
-import { AboutScreen } from "@screens/about/about"
+import { ContactScreen } from "@screens/contact/contact"
 
-const About = () => (
+const Contact = () => (
   <div id="home" className="home">
     <Layout>
-      <AboutScreen />
+      <ContactScreen />
     </Layout>
   </div>
 )
 
-export default About
+export default Contact

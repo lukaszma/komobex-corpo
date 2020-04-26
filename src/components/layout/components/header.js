@@ -1,13 +1,10 @@
-/* eslint-disable */
-import React, { useState } from "react"
+import React from "react"
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { Location } from "@reach/router"
 
-const Header = props => {
-  const [activeLink, setActiveLink] = useState("/")
-  console.log(props)
+const Header = () => {
   return (
     <Location>
       {({ location }) => (
@@ -203,7 +200,7 @@ const Header = props => {
                             <a href="#">Blog</a>
                           </li>
                           <li className="menu-item">
-                            <a href="#">Kontakt</a>
+                            <Link to="/kontakt">Kontakt</Link>
                           </li>
                         </ul>
                       </div>

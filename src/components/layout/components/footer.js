@@ -34,7 +34,7 @@ const Footer = () => (
                 <a href="#">Realizacje</a>
               </li>
               <li>
-                <a href="#">Kontakt</a>
+              <Link to="/kontakt">Kontakt</Link>
               </li>
               <li>
                 <a href="#">Kariera</a>
