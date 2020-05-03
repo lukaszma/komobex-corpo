@@ -1,7 +1,8 @@
 import React from "react"
 import CardTag from "./cardTag"
+import PropTypes from "prop-types"
 
-const Card = () => (
+const Card = ({ tags }) => (
   <div className="card">
     <div className="card__image-container">
       <img className="card__image" src="../../../hala-gliwice-1.jpg" alt="" />
@@ -24,10 +25,15 @@ const Card = () => (
 
     <div className="card__content">
       <h2 className="card__title">Arena Gliwice</h2>
-      <CardTag>C.O.</CardTag>
-      <CardTag>wod-kan</CardTag>
+      {tags.map((tag, index) => (
+        <CardTag key={index}>{tag}</CardTag>
+      ))}
     </div>
   </div>
 )
+
+Card.propTypes = {
+  tags: PropTypes.array,
+}
 
 export default Card

@@ -75,6 +75,11 @@ export const routes = {
         to: "/arena-gliwice",
         routeName: "arena-gliwice",
       },
+      {
+        title: "Wroclavia",
+        to: "/wroclavia",
+        routeName: "wroclavia",
+      },
     ],
   },
   404: {

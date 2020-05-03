@@ -1,9 +1,16 @@
 import React from "react"
 import { Filters, Cards } from "./components"
+import PropTypes from "prop-types"
 
-export const RealizationsScreen = () => (
+const RealizationsScreen = ({ data }) => (
   <>
     <Filters />
-    <Cards />
+    <Cards data={data} />
   </>
 )
+
+RealizationsScreen.propTypes = {
+  data: PropTypes.object,
+}
+
+export default RealizationsScreen

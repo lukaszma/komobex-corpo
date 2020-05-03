@@ -1,18 +1,38 @@
-const path = require('path')
+const path = require("path")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
-  const Realization = path.resolve(`src/dynamicPages/realization.js`);
+  const Realization = path.resolve(`src/dynamicPages/realization.js`)
 
-  createPage({
-    path: '/realizacje/arena-gliwice',
-    component: Realization,
-    // In your blog post template's graphql query, you can use pagePath
-    // as a GraphQL variable to query for data from the markdown file.
-    context: {
-      title: 'Arena Gliwice',
-      description: "Wykonaliśmy szereg prac w Arenie Gliwice..."
-    },
+  const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+              imagesDirectory
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  result.data.allMarkdownRemark.edges.forEach(async ({ node }) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: Realization,
+      context: { imagesDirectory: node.frontmatter.imagesDirectory },
+    })
   })
 }

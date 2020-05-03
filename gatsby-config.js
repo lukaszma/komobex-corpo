@@ -11,6 +11,21 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `realizations-markdown-pages`,
+        path: `${__dirname}/src/markdown-pages/realizations`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `realizations-images`,
+        path: `${__dirname}/src/images/realizations`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `main_page_images`,
         path: `${__dirname}/src/assets/images/mainPage`,
       },

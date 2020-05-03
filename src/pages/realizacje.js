@@ -1,13 +1,39 @@
 import React from "react"
 import Layout from "@components/layout/layout"
-import { RealizationsScreen } from "@screens/realizations/realizations"
+import { graphql } from "gatsby"
+import PropTypes from "prop-types"
+import  RealizationsScreen  from "@screens/realizations/realizations"
 
-const Realizations = () => (
+const Realizations = ({ data }) => (
   <div id="realizations" className="realizations">
     <Layout>
-      <RealizationsScreen />
+      <RealizationsScreen data={data} />
     </Layout>
   </div>
 )
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 1000
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+            imagesDirectory
+            mainPage
+            tags
+          }
+        }
+      }
+    }
+  }
+`
+
+Realizations.propTypes = {
+  data: PropTypes.object,
+}
 
 export default Realizations
