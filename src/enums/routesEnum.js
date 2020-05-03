@@ -77,6 +77,12 @@ export const routes = {
       },
     ],
   },
+  404: {
+    pageTitle: {
+      title: "Ups",
+      subtitle: "Podana strona nie istnieje.",
+    },
+  },
 }
 
 export const getLinkDetailsByRoute = route => {

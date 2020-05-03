@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
 import { Location } from "@reach/router"
@@ -46,14 +47,15 @@ const Layout = ({ children }) => {
               isHeaderSticky={isHeaderSticky}
               siteTitle={data.site.siteMetadata.title}
             />
-            {currentRouteOptions.pageTitle && (
+            {console.log(currentRouteOptions)}
+            {currentRouteOptions && currentRouteOptions.pageTitle && (
               <PageTitle
                 title={currentRouteOptions.pageTitle.title}
                 subtitle={currentRouteOptions.pageTitle.subtitle}
               />
             )}
-            {currentRouteOptions.hasBreadcrumbs && <Breadcrumbs />}
-            {currentRouteOptions.hasAdditionalInfo && <AdditionalInfo />}
+            {currentRouteOptions && currentRouteOptions.hasBreadcrumbs && <Breadcrumbs />}
+            {currentRouteOptions && currentRouteOptions.hasAdditionalInfo && <AdditionalInfo />}
             {children}
             <Footer />
           </>
