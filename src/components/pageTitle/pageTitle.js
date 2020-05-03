@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 const PageTitle = ({ title, subtitle }) => (
-  <div className="main-title block-section padd-40-top padd-60-btm bg-grey">
+  <div className="main-title block-section padd-100-top padd-60-btm bg-grey">
     <div className="container">
       <div className="row">
         <div className="col-md-8 col-md-offset-2">

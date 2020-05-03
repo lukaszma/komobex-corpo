@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from "react"
 import GoogleMapReact from "google-map-react"
 import styled from "styled-components"
@@ -15,11 +14,9 @@ const StyledMarker = styled.div`
   color: rgb(55, 52, 52);
   font-weight: 600;
 `
-const Marker = ({ lat, lng }) => <StyledMarker>Biuro</StyledMarker>
+const Marker = () => <StyledMarker>Biuro</StyledMarker>
 
-const Map = props => {
-  const { options } = props
-  console.log(props)
+const Map = () => {
   const state = {
     center: {
       lat: 50.826633,
@@ -204,7 +201,7 @@ const Map = props => {
               ],
             }}
           >
-            <Marker lat={state.center.lat} lng={state.center.lng} />
+            <Marker />
           </GoogleMapReact>
         </div>
       </div>

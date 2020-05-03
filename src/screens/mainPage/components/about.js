@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 export const About = () => (
   <div id="about" className="block-section image-block bg-white">
@@ -37,12 +38,12 @@ export const About = () => (
             usług oraz zadowolenie klienta
           </p>
           <p>
-            <a
+            <Link
               className="button btn-danger popup-video"
-              href="http://www.youtube.com/watch?v=Og879fOk6DQ"
+              to="/uslugi"
             >
               <i className="fa fa-wrench"></i> Sprawdź nasze usługi
-            </a>
+            </Link>
           </p>
         </div>
       </div>

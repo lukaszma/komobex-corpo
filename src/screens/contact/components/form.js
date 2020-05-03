@@ -6,9 +6,9 @@ export const Form = () => (
       <div className="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm">
         <form className="contact-form">
           <p>
-            Zadzwoń lub prześlij nasz do nas zapytania przy pomocy poniższego
-            formularza, aby poprosić o wycenę lub zadać ogólne pytania dotyczące
-            naszych usług. Czekamy na Ciebie!
+            Aby poprosić o wycenę lub zadać ogólne pytania dotyczące naszych
+            usług, zadzwoń lub prześlij do nas zapytanie przy pomocy poniższego
+            formularza. Czekamy na Ciebie!
           </p>
           <div className="form-group">
             <label htmlFor="contact_name">Imię i Nazwisko / Firma</label>

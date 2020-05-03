@@ -1,0 +1,7 @@
+export { default as Sidebar } from "./sidebar/sidebar"
+export { default as AllServices } from "./allServices/allServices"
+export { default as WaterAndSewage } from "./waterAndSewage/waterAndSewage"
+export { default as CentralHeating } from "./centralHeating/centralHeating"
+export { default as Crane } from "./crane/crane"
+export { default as Electrical } from "./electrical/electrical"
+export { default as Flats } from "./flats/flats"

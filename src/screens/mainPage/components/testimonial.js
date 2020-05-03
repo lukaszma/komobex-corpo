@@ -2,7 +2,7 @@ import React from "react"
 
 export const Testimonial = () => (
   <div id="testimonial" className="block-section image-block bg-light">
-    <div className="container-fluid container-no-padding">
+    <div className="container-fluid contai\ner-no-padding">
       <div className="row row-no-margin">
         <div className="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
           <div
@@ -50,9 +50,9 @@ export const Testimonial = () => (
               </div>
               <div className="item">
                 <p>
-                  I {"don't"} know what else to say. It had everything we wanted and
-                  was better designed than anything we could have accomplished
-                  on our own. Thanks for the great work.
+                  I {"don't"} know what else to say. It had everything we wanted
+                  and was better designed than anything we could have
+                  accomplished on our own. Thanks for the great work.
                 </p>
                 <img
                   className="testimony-item-image"

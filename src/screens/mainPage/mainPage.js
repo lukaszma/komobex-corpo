@@ -1,6 +1,6 @@
 import React from "react"
 import { Service } from "./components/service"
-import { Work } from "./components/work"
+import { Work } from "./components/work/work"
 import { CallToAction } from "./components/callToAction"
 import { About } from "./components/about"
 import { Why } from "./components/why"

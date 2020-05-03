@@ -11,12 +11,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `main_page_images`,
+        path: `${__dirname}/src/assets/images/mainPage`,
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -36,6 +37,7 @@ module.exports = {
           "@components": path.resolve(__dirname, "src/components"),
           "@screens": path.resolve(__dirname, "src/screens"),
           "@assets": path.resolve(__dirname, "src/assets"),
+          "@enums": path.resolve(__dirname, "src/enums"),
         },
         extensions: ["js", "png"],
       },

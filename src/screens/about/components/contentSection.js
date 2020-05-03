@@ -43,32 +43,40 @@ export const ContentSection = () => (
       </div>
       <div className="row">
         <div className="col-sm-12">
-          <p>
-            Komobex Inel to gwarancja jakości oparta na:
-            <ul>
-              <li>
+          <p>Komobex Inel to gwarancja jakości oparta na:</p>
+          <ul>
+            <li>
+              <p>
                 Solidnych podstawach ekonomicznych, za co D&amp;B Poland nadała
                 spółce Komobex Inel sp. z o. o. certyfikat Wiarygodności
                 Biznesowej,
-              </li>
-              <li>
+              </p>
+            </li>
+            <li>
+              <p>
                 Doskonaleniu procesów technologicznych oraz zarządzania
                 jakością, czego dowodem jest certyfikat ISO 9001:2001,
-              </li>
-              <li>
+              </p>
+            </li>
+            <li>
+              <p>
                 Doświadczeniu oraz podnoszeniu kwalifikacji co pozwala na
                 terminowe realizowanie każdej inwestycji,
-              </li>
-              <li>
+              </p>
+            </li>
+            <li>
+              <p>
                 Rzetelności, dzięki czemu utrzymujemy dobre relacje z
                 inwestorami, dostawcami, a także z pracownikami Komobex Inel,
-              </li>
-              <li>
+              </p>
+            </li>
+            <li>
+              <p>
                 Lokalnej tożsamości wspierając wiele działań na rzecz sportu,
                 ekologii oraz propagowanie zdrowego stylu życia wśród młodzieży.
-              </li>
-            </ul>
-          </p>
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="row">

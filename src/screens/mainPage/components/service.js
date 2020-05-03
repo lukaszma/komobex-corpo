@@ -38,7 +38,7 @@ export const Service = () => (
           <div className="blog-entry">
             <a href="#" className="blog-entry-thumbnail">
               <img
-                src="../../../air-condition.jpg"
+                src="../../../mainPage/IMG_20190329_151253 — kopia.jpg"
                 alt="green building"
                 className="img-responsive"
               />
@@ -68,7 +68,7 @@ export const Service = () => (
             <li>
               <span className="entry-post-thumbnail">
                 <img
-                  src="../../../img-service-03.jpg"
+                  src="https://cdn.pixabay.com/photo/2014/09/27/16/59/heating-463904_960_720.jpg"
                   alt="construction Consultant"
                 />
               </span>
@@ -84,7 +84,7 @@ export const Service = () => (
             <li>
               <span className="entry-post-thumbnail">
                 <img
-                  src="../../../img-service-04.jpg"
+                  src="https://cdn.pixabay.com/photo/2018/10/24/21/30/electrician-3771316_960_720.jpg"
                   alt="General Contracting"
                 />
               </span>
@@ -100,7 +100,7 @@ export const Service = () => (
             <li>
               <span className="entry-post-thumbnail">
                 <img
-                  src="../../../img-service-03.jpg"
+                  src="../../../mainPage/baukran-3703469_1920.jpg"
                   alt="Construction Management"
                 />
               </span>
@@ -116,7 +116,7 @@ export const Service = () => (
             </li>
             <li>
               <span className="entry-post-thumbnail">
-                <img src="../../../img-service-06.jpg" alt="House Renovation" />
+                <img src="../../../mainPage/apartment-chair-clean-contemporary-279719.jpg" alt="House Renovation" />
               </span>
               <div className="entry-post-content">
                 <h4 className="entry-post-title">
