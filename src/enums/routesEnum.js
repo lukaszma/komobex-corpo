@@ -69,6 +69,13 @@ export const routes = {
       subtitle: "",
     },
     hasBreadcrumbs: true,
+    children: [
+      {
+        title: "Arena Gliwice",
+        to: "/arena-gliwice",
+        routeName: "arena-gliwice",
+      },
+    ],
   },
 }
 

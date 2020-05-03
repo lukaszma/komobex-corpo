@@ -1,4 +1,9 @@
 import React from "react"
-import { Filters } from "./components"
+import { Filters, Cards } from "./components"
 
-export const RealizationsScreen = () => <Filters />
+export const RealizationsScreen = () => (
+  <>
+    <Filters />
+    <Cards />
+  </>
+)

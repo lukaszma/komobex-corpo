@@ -234,13 +234,13 @@ const Header = ({ isHeaderSticky, currentRouteOptions }) => {
                     >
                       <CustomLink to="/realizacje">Realizacje</CustomLink>
                     </li>
-                    <li
+                    {/* <li
                       className={classnames("menu-item", {
                         "current-menu-item": currentRouteOptions.to === "/blog",
                       })}
                     >
                       <CustomLink to="/blog">Blog</CustomLink>
-                    </li>
+                    </li> */}
                     <li
                       className={classnames("menu-item", {
                         "current-menu-item":

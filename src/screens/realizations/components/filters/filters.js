@@ -18,17 +18,21 @@ const Filters = () => {
     }
   }
   return (
-    <FiltersList>
-      {filters.map(filter => (
-        <FilterItem
-          onClick={() => onFilter(filter.id)}
-          key={filter.id}
-          className={classnames({ active: includes(activeFilters, filter.id) })}
-        >
-          <span>{filter.title}</span>
-        </FilterItem>
-      ))}
-    </FiltersList>
+    <div className="container">
+      <FiltersList>
+        {filters.map(filter => (
+          <FilterItem
+            onClick={() => onFilter(filter.id)}
+            key={filter.id}
+            className={classnames({
+              active: includes(activeFilters, filter.id),
+            })}
+          >
+            <span>{filter.title}</span>
+          </FilterItem>
+        ))}
+      </FiltersList>
+    </div>
   )
 }
 

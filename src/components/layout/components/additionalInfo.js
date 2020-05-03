@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from "react"
 import { Location } from "@reach/router"
 import classnames from "classnames"
@@ -7,7 +9,8 @@ const AdditionalInfo = () => (
     {({ location }) => {
       const routes = location.pathname.split("/")
       const currentRoute = routes[routes.length - 1]
-      const isTheme = "kontakt" === currentRoute
+      // const isTheme = "kontakt" === currentRoute
+      const isTheme = false
 
       return (
         <div
