@@ -25,6 +25,8 @@ export const query = graphql`
             imagesDirectory
             mainPage
             tags
+            mainPage
+            title
           }
         }
       }

@@ -1,4 +1,5 @@
 import React from "react"
+import CustomLink from "@components/customLink/customLink"
 
 export const Service = () => (
   <div id="service" className="service content-section bg-white">
@@ -6,29 +7,30 @@ export const Service = () => (
       <div className="row">
         <div className="col-md-4">
           <div className="blog-entry">
-            <a href="#" className="blog-entry-thumbnail">
-            {/* https://www.google.com/search?q=instalacje+wod+kan&sxsrf=ALeKk02biDAXqNFw0jYFTjedUDydi8vRMg:1587814130418&source=lnms&tbm=isch&sa=X&ved=2ahUKEwipztnJvIPpAhXU4KYKHe_pC7EQ_AUoAXoECA4QAw&biw=1920&bih=920#imgrc=c61ux9afl1NdpM */}
+            <CustomLink to="/uslugi/instalacje-wodno-kanalizacyjne">
+              {/* https://www.google.com/search?q=instalacje+wod+kan&sxsrf=ALeKk02biDAXqNFw0jYFTjedUDydi8vRMg:1587814130418&source=lnms&tbm=isch&sa=X&ved=2ahUKEwipztnJvIPpAhXU4KYKHe_pC7EQ_AUoAXoECA4QAw&biw=1920&bih=920#imgrc=c61ux9afl1NdpM */}
               <img
                 src="../../../plumbing.jpg"
                 alt="metal roofting"
                 className="img-responsive"
               />
-            </a>
+            </CustomLink>
             <div className="blog-entry-header">
               <h2 className="entry-title">
-                <a href="#" rel="bookmark">
+                <CustomLink to="/uslugi/instalacje-wodno-kanalizacyjne">
                   Instalacje wodno-kanalizacyjne
-                </a>
+                </CustomLink>
               </h2>
             </div>
             <div className="blog-entry-content">
               <p>
-                Oferujemy instalacje sieci zewnętrznych wodociągowych, deszczowych, sanitarnych i ciepłowniczych
+                Oferujemy instalacje sieci zewnętrznych wodociągowych,
+                deszczowych, sanitarnych i ciepłowniczych
               </p>
               <p>
-                <a href="#" className="read-more">
+                <CustomLink to="/uslugi/instalacje-wodno-kanalizacyjne">
                   Czytaj więcej &#43;
-                </a>
+                </CustomLink>
               </p>
             </div>
           </div>
@@ -36,28 +38,29 @@ export const Service = () => (
 
         <div className="col-md-4">
           <div className="blog-entry">
-            <a href="#" className="blog-entry-thumbnail">
+          <CustomLink to="/uslugi/instalacje-wentylacyjne-i-klimatyzacyjne">
               <img
                 src="../../../mainPage/IMG_20190329_151253 — kopia.jpg"
                 alt="green building"
                 className="img-responsive"
               />
-            </a>
+            </CustomLink>
             <div className="blog-entry-header">
               <h2 className="entry-title">
-                <a href="#" rel="bookmark">
+                <CustomLink to="/uslugi/instalacje-wentylacyjne-i-klimatyzacyjne">
                   Instalacje wentylacyjne i klimatyzacyjne
-                </a>
+                </CustomLink>
               </h2>
             </div>
             <div className="blog-entry-content">
               <p>
-                Świadczymy usługi w instalacjach wentylacyjnych i klimatyzacyjnych dla obiektów przemysłowych
+                Świadczymy usługi w instalacjach wentylacyjnych i
+                klimatyzacyjnych dla obiektów przemysłowych
               </p>
               <p>
-                <a href="#" className="read-more">
+                <CustomLink to="/uslugi/instalacje-wentylacyjne-i-klimatyzacyjne">
                   Czytaj więcej &#43;
-                </a>
+                </CustomLink>
               </p>
             </div>
           </div>
@@ -74,7 +77,9 @@ export const Service = () => (
               </span>
               <div className="entry-post-content">
                 <h4 className="entry-post-title">
-                  <a href="#">Instalacje centralnego ogrzewania</a>
+                  <CustomLink to="/uslugi/instalacje-co">
+                    Instalacje centralnego ogrzewania
+                  </CustomLink>
                 </h4>
                 <p>
                   Process of Consultation Whether you know exactly how you ...
@@ -84,13 +89,15 @@ export const Service = () => (
             <li>
               <span className="entry-post-thumbnail">
                 <img
-                  src="https://cdn.pixabay.com/photo/2018/10/24/21/30/electrician-3771316_960_720.jpg"
+                  src="https://cdn.pixabay.com/photo/2019/11/06/10/26/cable-4605760_960_720.jpg"
                   alt="General Contracting"
                 />
               </span>
               <div className="entry-post-content">
                 <h4 className="entry-post-title">
-                  <a href="#">Instalacje elektryczne</a>
+                  <CustomLink to="/uslugi/instalacje-elektryczne">
+                    Instalacje elektryczne
+                  </CustomLink>
                 </h4>
                 <p>
                   Construction With a reputation built on offering superior ...
@@ -106,7 +113,9 @@ export const Service = () => (
               </span>
               <div className="entry-post-content">
                 <h4 className="entry-post-title">
-                  <a href="#">Usługi dźwigowe</a>
+                  <CustomLink to="/uslugi/uslugi-dzwigowe">
+                    Usługi dźwigowe
+                  </CustomLink>
                 </h4>
                 <p>
                   We offer commitment at all levels of building project, from
@@ -116,11 +125,16 @@ export const Service = () => (
             </li>
             <li>
               <span className="entry-post-thumbnail">
-                <img src="../../../mainPage/apartment-chair-clean-contemporary-279719.jpg" alt="House Renovation" />
+                <img
+                  src="../../../mainPage/apartment-chair-clean-contemporary-279719.jpg"
+                  alt="House Renovation"
+                />
               </span>
               <div className="entry-post-content">
                 <h4 className="entry-post-title">
-                  <a href="#">Wynajem mieszkań</a>
+                  <CustomLink to="/uslugi/wynajem-mieszkan">
+                    Wynajem mieszkań
+                  </CustomLink>
                 </h4>
                 <p>
                   Interior There are a number of great reasons to makeover ...

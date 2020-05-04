@@ -1,11 +1,14 @@
+/* eslint-disable */
 import React from "react"
 import CardTag from "./cardTag"
 import PropTypes from "prop-types"
+import Img from "gatsby-image"
 
-const Card = ({ tags }) => (
+const Card = ({ tags, image, title }) => (
   <div className="card">
     <div className="card__image-container">
-      <img className="card__image" src="../../../hala-gliwice-1.jpg" alt="" />
+      {/* <Img className="card__image" fluid={image} /> */}
+      <img className="card__image" src={image.src} alt="" />
     </div>
 
     <svg className="card__svg" viewBox="0 0 600 850">
@@ -24,7 +27,7 @@ const Card = ({ tags }) => (
     </svg>
 
     <div className="card__content">
-      <h2 className="card__title">Arena Gliwice</h2>
+      <h2 className="card__title">{title}</h2>
       {tags.map((tag, index) => (
         <CardTag key={index}>{tag}</CardTag>
       ))}
@@ -34,6 +37,8 @@ const Card = ({ tags }) => (
 
 Card.propTypes = {
   tags: PropTypes.array,
+  image: PropTypes.object,
+  title: PropTypes.string,
 }
 
 export default Card

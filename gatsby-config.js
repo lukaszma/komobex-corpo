@@ -22,6 +22,13 @@ module.exports = {
         path: `${__dirname}/src/images/realizations`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `realizations-card-thumbnails`,
+        path: `${__dirname}/src/images/realizations-card-thumbnails`,
+      },
+    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
