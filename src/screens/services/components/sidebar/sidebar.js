@@ -36,17 +36,6 @@ const Sidebar = () => (
               ))}
             </ul>
           </div>
-
-          <div className="widget widget_brocure">
-            <h3 className="widget-title">Broszury</h3>
-            <ul className="nav nav-pills nav-stacked">
-              <li role="presentation" className="active">
-                <a href="#">
-                  <i className="fa fa-file-pdf-o"></i> <span>Pobierz .PDF</span>
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
       )
     }}

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import CustomLink from "@components/customLink/customLink"
 
 const Footer = () => (
   <footer id="colophon" className="site-footer bg-black" role="contentinfo">
@@ -25,19 +25,16 @@ const Footer = () => (
             <h3 className="widget-title">Komobex Inel</h3>
             <ul>
               <li>
-                <Link to="/o-firmie">O firmie</Link>
+                <CustomLink to="/o-firmie">O firmie</CustomLink>
               </li>
               <li>
-                <a href="#">Usługi</a>
+                <CustomLink to="/uslugi">Usługi</CustomLink>
               </li>
               <li>
-                <a href="#">Realizacje</a>
+                <CustomLink to="/realizacje">Realizacje</CustomLink>
               </li>
               <li>
-              <Link to="/kontakt">Kontakt</Link>
-              </li>
-              <li>
-                <a href="#">Kariera</a>
+                <CustomLink to="/kontakt">Kontakt</CustomLink>
               </li>
             </ul>
           </section>
@@ -48,22 +45,30 @@ const Footer = () => (
             <h3 className="widget-title">Nasze usługi</h3>
             <ul>
               <li>
-                <a href="#">Instalacje wod-kan</a>
+                <CustomLink to="/uslugi/instalacje-sanitarne-zewnetrzne">
+                  Instalacje sanitarne zewnętrzne
+                </CustomLink>
               </li>
               <li>
-                <a href="#">Instalacje wentylacyjne i klimatyzacyjne</a>
+                <CustomLink to="/uslugi/instalacje-sanitarne-wewnetrzne">
+                  Instalacje sanitarne wewnętrzne
+                </CustomLink>
               </li>
               <li>
-                <a href="#">Instalacje c.o</a>
+                <CustomLink to="/uslugi/instalacje-przemyslowe">
+                  Instalacje przemysłowe
+                </CustomLink>
+              </li>
+
+              <li>
+                <CustomLink to="/uslugi/uslugi-dzwigowe">
+                  Usługi dźwigowe
+                </CustomLink>
               </li>
               <li>
-                <a href="#">Instalacje elektryczne</a>
-              </li>
-              <li>
-                <a href="#">Usługi dźwigowe</a>
-              </li>
-              <li>
-                <a href="#">Wynajem mieszkań</a>
+                <CustomLink to="/uslugi/wynajem-mieszkan">
+                  Wynajem mieszkań
+                </CustomLink>
               </li>
             </ul>
           </section>

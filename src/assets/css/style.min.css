@@ -17,12 +17,12 @@ body {
 ::-webkit-selection {
   color: #fff;
   text-shadow: none;
-  background: #ffcb66;
+  background: #F86040;
 }
 ::selection {
   color: #fff;
   text-shadow: none;
-  background: #ffcb66;
+  background: #F86040;
 }
 a {
   color: #f5a100;
@@ -2283,7 +2283,7 @@ hr {
   color: #F86040;
 }
 .blog-entry-header .entry-meta .entry-cat .cat-link a:hover {
-  color: #ffcb66;
+  color: #F86040;
 }
 .blog-entry-header .entry-meta .entry-cat .cat-link a:last-child {
   margin-right: 0;

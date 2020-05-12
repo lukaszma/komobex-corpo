@@ -35,24 +35,19 @@ export const routes = {
     hasBreadcrumbs: true,
     children: [
       {
-        title: "Instalacje wodno-kanalizacyjne",
-        to: "/instalacje-wodno-kanalizacyjne",
-        routeName: "instalacje-wodno-kanalizacyjne",
+        title: "Instalacje sanitarne zewnętrzne",
+        to: "/instalacje-sanitarne-zewnetrzne",
+        routeName: "instalacje-sanitarne-zewnetrzne",
       },
       {
-        title: "Instalacje wentylacyjne i klimatyzacyjne",
-        to: "/instalacje-wentylacyjne-i-klimatyzacyjne",
-        routeName: "instalacje-wentylacyjne-i-klimatyzacyjne",
+        title: "Instalacje sanitarne wenętrzne",
+        to: "/instalacje-sanitarne-wewnetrzne",
+        routeName: "instalacje-sanitarne-wewnetrzne",
       },
       {
-        title: "Instalacje c.o.",
-        to: "/instalacje-co",
-        routeName: "instalacje-co",
-      },
-      {
-        title: "Instalacje elektryczne",
-        to: "/instalacje-elektryczne",
-        routeName: "instalacje-elektryczne",
+        title: "Instalacje przemysłowe",
+        to: "/instalacje-przemyslowe",
+        routeName: "instalacje-przemyslowe",
       },
       {
         title: "Usługi dźwigowe",
@@ -76,81 +71,90 @@ export const routes = {
     hasBreadcrumbs: true,
     children: [
       {
-        title: "Arena Gliwice",
-        to: "/arena-gliwice",
-        routeName: "arena-gliwice",
+        title: "Realizacje ukończone",
+        to: "/ukonczone",
+        routeName: "ukonczone",
       },
       {
-        title: "Huta Czestochowa",
-        to: "/huta-czestochowa",
-        routeName: "huta-czestochowa",
+        title: "Realizacje w trakcie",
+        to: "/w-trakcie",
+        routeName: "w-trakcie",
       },
-      {
-        title: "Koszecin Konopiska Kotlownia",
-        to: "/koszecin-konopiska-kotlownia",
-        routeName: "koszecin-konopiska-kotlownia",
-      },
-      {
-        title: "Libero",
-        to: "/libero",
-        routeName: "libero",
-      },
-      {
-        title: "Łódz Politechnika",
-        to: "/lodz-politechnika",
-        routeName: "lodz-politechnika",
-      },
-      {
-        title: "MCK",
-        to: "/mck",
-        routeName: "mck",
-      },
-      {
-        title: "Sad Częstochowa",
-        to: "/sad-czestochowa",
-        routeName: "sad-czestochowa",
-      },
-      {
-        title: "Sagitarius",
-        to: "/sagitarius",
-        routeName: "sagitarius",
-      },
-      {
-        title: "Sezam",
-        to: "/sezam",
-        routeName: "sezam",
-      },
-      {
-        title: "Stadion Zabrze",
-        to: "/stadion-zabrze",
-        routeName: "stadion-zabrze",
-      },
-      {
-        title: "Tarnowskie Góry",
-        to: "/tarnowskie-gory",
-        routeName: "tarnowskie-gory",
-      },
-      {
-        title: "Trampoliny",
-        to: "/trampoliny",
-        routeName: "trampoliny",
-      },
-      {
-        title: "TRW",
-        to: "/trw",
-        routeName: "trw",
-      },
-      {
-        title: "Usługi Dźwigowe",
-        to: "/uslugi-dzwigowe",
-        routeName: "uslugi-dzwigowe",
-      },
-      {
-        title: "Face 2 Face",
-        to: "/face-2-face",
-        routeName: "face-2-face",
-      },
-      
+      // {
+      //   title: "Arena Gliwice",
+      //   to: "/arena-gliwice",
+      //   routeName: "arena-gliwice",
+      // },
+      // {
+      //   title: "Huta Czestochowa",
+      //   to: "/huta-czestochowa",
+      //   routeName: "huta-czestochowa",
+      // },
+      // {
+      //   title: "Koszecin Konopiska Kotlownia",
+      //   to: "/koszecin-konopiska-kotlownia",
+      //   routeName: "koszecin-konopiska-kotlownia",
+      // },
+      // {
+      //   title: "Libero",
+      //   to: "/libero",
+      //   routeName: "libero",
+      // },
+      // {
+      //   title: "Łódz Politechnika",
+      //   to: "/lodz-politechnika",
+      //   routeName: "lodz-politechnika",
+      // },
+      // {
+      //   title: "MCK",
+      //   to: "/mck",
+      //   routeName: "mck",
+      // },
+      // {
+      //   title: "Sad Częstochowa",
+      //   to: "/sad-czestochowa",
+      //   routeName: "sad-czestochowa",
+      // },
+      // {
+      //   title: "Sagitarius",
+      //   to: "/sagitarius",
+      //   routeName: "sagitarius",
+      // },
+      // {
+      //   title: "Sezam",
+      //   to: "/sezam",
+      //   routeName: "sezam",
+      // },
+      // {
+      //   title: "Stadion Zabrze",
+      //   to: "/stadion-zabrze",
+      //   routeName: "stadion-zabrze",
+      // },
+      // {
+      //   title: "Tarnowskie Góry",
+      //   to: "/tarnowskie-gory",
+      //   routeName: "tarnowskie-gory",
+      // },
+      // {
+      //   title: "Trampoliny",
+      //   to: "/trampoliny",
+      //   routeName: "trampoliny",
+      // },
+      // {
+      //   title: "TRW",
+      //   to: "/trw",
+      //   routeName: "trw",
+      // },
+      // {
+      //   title: "Usługi Dźwigowe",
+      //   to: "/uslugi-dzwigowe",
+      //   routeName: "uslugi-dzwigowe",
+      // },
+      // {
+      //   title: "Face 2 Face",
+      //   to: "/face-2-face",
+      //   routeName: "face-2-face",
+      // },
     ],
   },
   404: {

@@ -6,6 +6,48 @@ export const StyledHeader = styled.div`
     min-height: 0;
   }
 
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .blink {
+    animation: fade 2000ms infinite;
+    -webkit-animation: fade 2000ms infinite;
+  }
+
+  .main-page-arrow {
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 14px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    bottom: 100px;
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+  }
+
   header {
     min-height: 50px;
     background-color: #fff !important;
@@ -17,6 +59,7 @@ export const StyledHeader = styled.div`
     line-height: 18px;
     transition: all 200ms ease-out;
     display: flex;
+    padding: 10px 0;
 
     @media screen and (max-width: 767px) {
       width: 90%;
@@ -66,7 +109,7 @@ export const StyledHeader = styled.div`
           outline: none;
 
           &:hover {
-            color: #F86040;
+            color: #f86040;
           }
         }
         .nav-menu {
@@ -81,17 +124,18 @@ export const StyledHeader = styled.div`
           .menu-item {
             &.current-menu-item {
               a {
-                color: #F86040 !important;
+                color: #f86040 !important;
                 text-decoration: none;
               }
             }
             a {
+              font-size: 14px;
               color: #000;
               font-weight: 600 !important;
               text-transform: capitalize;
 
               &:hover {
-                color: #F86040;
+                color: #f86040;
               }
             }
           }
@@ -130,7 +174,7 @@ export const StyledHeader = styled.div`
       .value {
         font-weight: 600;
         &.accent {
-          color: #F86040;
+          color: #f86040;
         }
       }
     }

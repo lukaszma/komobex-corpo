@@ -1,13 +1,15 @@
+/* eslint-disable */
 import React from "react"
 import Layout from "@components/layout/layout"
 import { graphql } from "gatsby"
 import PropTypes from "prop-types"
-import  RealizationsScreen  from "@screens/realizations/realizations"
+// import RealizationsScreen from "@screens/realizations/realizations"
+import { Options } from "@screens/realizations/components"
 
 const Realizations = ({ data }) => (
   <div id="realizations" className="realizations">
     <Layout>
-      <RealizationsScreen data={data} />
+      <Options />
     </Layout>
   </div>
 )

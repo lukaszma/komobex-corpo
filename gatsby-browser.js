@@ -5,5 +5,14 @@
  */
 
 // You can delete this file if you're not using it
+
+
 import "./src/styles/global.css"
-import "./node_modules/react-image-gallery/styles/css/image-gallery.css";
+import "./node_modules/react-image-gallery/styles/css/image-gallery.css"
+
+export const onClientEntry = () => {
+    // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
+    if (!(`IntersectionObserver` in window)) {
+      import(`intersection-observer`)
+    }
+  }

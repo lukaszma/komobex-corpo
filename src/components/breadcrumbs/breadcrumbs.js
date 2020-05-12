@@ -1,4 +1,3 @@
-/*eslint-disable */
 import React from "react"
 import { Link } from "gatsby"
 import { Location } from "@reach/router"
@@ -18,7 +17,7 @@ export const Breadcrumbs = () => (
                   {routes.map((route, index) => {
                     const routeDetails = getLinkDetailsByRoute(route)
                     const key = index
-console.log(route)
+
                     return index + 1 !== routes.length ? (
                       <li key={key}>
                         <Link to={routeDetails.to}>{routeDetails.title}</Link>

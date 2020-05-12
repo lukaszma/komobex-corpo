@@ -1,10 +1,10 @@
 import React from "react"
 import ServicesScreen from "@screens/services/services"
-import { WaterAndSewage } from "@screens/services/components"
+import { Inside } from "@screens/services/components"
 
 const Services = () => (
   <ServicesScreen>
-    <WaterAndSewage />
+    <Inside />
   </ServicesScreen>
 )
 
