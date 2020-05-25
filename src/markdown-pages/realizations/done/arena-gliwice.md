@@ -1,10 +1,11 @@
 ---
-path: "/realizacje/arena-gliwice"
+path: "arena-gliwice"
 date: "2019-05-04"
 title: "Arena Gliwice"
 imagesDirectory: "arena-gliwice"
-mainPage: arena-gliwice
+slug: arena-gliwice
 tags: [C.O, WOD-KAN]
+thumb: "../../../images/realizations/arena-gliwice/DSC_0038.jpg"
 ---
 
 # Arena Gliwice

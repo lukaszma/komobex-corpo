@@ -1,10 +1,11 @@
 ---
-path: "/realizacje/trw"
+path: "trw"
 date: "2019-05-04"
 title: "TRW"
 imagesDirectory: "trw"
-mainPage: trw
+slug: trw
 tags: [C.O, WOD-KAN]
+thumb: "../../../images/realizations/arena-gliwice/DSC_0038.jpg"
 ---
 
 # TRW

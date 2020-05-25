@@ -10,6 +10,7 @@ const Realization = ({ data }) => {
   return (
     <div id="home" className="home">
       <Layout>
+        asd
         <RealizationScreen
           frontmatter={frontmatter}
           html={html}
@@ -20,8 +21,8 @@ const Realization = ({ data }) => {
   )
 }
 export const pageQuery = graphql`
-  query($path: String!, $imagesDirectory: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query($slug: String!, $imagesDirectory: String!) {
+    markdownRemark(frontmatter: { path: { eq: $slug } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")

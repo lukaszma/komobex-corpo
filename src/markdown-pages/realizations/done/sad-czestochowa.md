@@ -1,10 +1,11 @@
 ---
-path: "/realizacje/sad-czestochowa"
+path: "sad-czestochowa"
 date: "2019-05-04"
 title: "Sąd Częstochowa"
 imagesDirectory: "sad-czestochowa"
-mainPage: sad-czestochowa
+slug: sad-czestochowa
 tags: [C.O, WOD-KAN]
+thumb: "../../../images/realizations/arena-gliwice/DSC_0038.jpg"
 ---
 
 # Sąd Częstochowa

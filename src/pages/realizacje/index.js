@@ -14,27 +14,27 @@ const Realizations = ({ data }) => (
   </div>
 )
 
-export const query = graphql`
-  query {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 1000
-    ) {
-      edges {
-        node {
-          frontmatter {
-            path
-            imagesDirectory
-            mainPage
-            tags
-            mainPage
-            title
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query {
+//     allMarkdownRemark(
+//       sort: { order: DESC, fields: [frontmatter___date] }
+//       limit: 1000
+//     ) {
+//       edges {
+//         node {
+//           frontmatter {
+//             path
+//             imagesDirectory
+//             mainPage
+//             tags
+//             mainPage
+//             title
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 Realizations.propTypes = {
   data: PropTypes.object,

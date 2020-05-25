@@ -1,10 +1,11 @@
 ---
-path: "/realizacje/mck"
+path: "mck"
 date: "2019-05-04"
 title: "MCK"
 imagesDirectory: "mck"
-mainPage: mck
+slug: mck
 tags: [C.O, WOD-KAN]
+thumb: "../../../images/realizations/arena-gliwice/DSC_0038.jpg"
 ---
 
 # MCK

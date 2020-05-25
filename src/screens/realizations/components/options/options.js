@@ -1,6 +1,5 @@
-/* eslint-disable */
-
 import React from "react"
+import { find } from "lodash"
 import {
   StyledOptions,
   LeftBackgroundImage,
@@ -13,7 +12,7 @@ export const Options = () => {
   const optionImages = useStaticQuery(graphql`
     query {
       allFile(
-        filter: { sourceInstanceName: { eq: "realizations-card-thumbnails" } }
+        filter: { sourceInstanceName: { eq: "realizations-options-images" } }
       ) {
         edges {
           node {
@@ -28,10 +27,14 @@ export const Options = () => {
       }
     }
   `)
-
-  const image1 = optionImages.allFile.edges[4].node.childImageSharp.fluid
-  const image2 = optionImages.allFile.edges[5].node.childImageSharp.fluid
-  console.log(image1)
+  const doneImage = find(
+    optionImages.allFile.edges,
+    edge => edge.node.name === "arena-gliwice"
+  )
+  const inProgressImage = find(
+    optionImages.allFile.edges,
+    edge => edge.node.name === "face-2-face"
+  )
 
   return (
     <StyledOptions>
@@ -40,7 +43,7 @@ export const Options = () => {
           <LeftBackgroundImage
             Tag="section"
             className="image"
-            fluid={image1}
+            fluid={doneImage.node.childImageSharp.fluid}
             backgroundColor={`#040e18`}
           >
             <div className="label">UKOŃCZONE</div>
@@ -51,7 +54,7 @@ export const Options = () => {
           <RightBackgroundImage
             Tag="section"
             className="image"
-            fluid={image2}
+            fluid={inProgressImage.node.childImageSharp.fluid}
             backgroundColor={`#040e18`}
           >
             <div className="label">W TRAKCIE</div>

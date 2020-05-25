@@ -25,7 +25,7 @@ body {
   background: #F86040;
 }
 a {
-  color: #f5a100;
+  color: #F86040;
   text-decoration: none;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
@@ -34,7 +34,7 @@ a {
   transition: all 0.1s linear;
 }
 a:hover {
-  color: #b37600;
+  color: #b81806;
   text-decoration: none;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;

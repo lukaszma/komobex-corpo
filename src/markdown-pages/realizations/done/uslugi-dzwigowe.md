@@ -1,9 +1,9 @@
 ---
-path: "/realizacje/uslugi-dzwigowe"
+path: "uslugi-dzwigowe"
 date: "2019-05-04"
 title: "Usługi Dźwigowe"
 imagesDirectory: "uslugi-dzwigowe"
-mainPage: uslugi-dzwigowe
+slug: uslugi-dzwigowe
 tags: [C.O, WOD-KAN]
 ---
 

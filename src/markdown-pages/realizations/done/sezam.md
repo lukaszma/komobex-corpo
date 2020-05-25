@@ -1,10 +1,11 @@
 ---
-path: "/realizacje/sezam"
+path: "sezam"
 date: "2019-05-04"
 title: "Sezam"
 imagesDirectory: "sezam"
-mainPage: sezam
+slug: sezam
 tags: [C.O, WOD-KAN]
+thumb: "../../../images/realizations/arena-gliwice/DSC_0038.jpg"
 ---
 
 # Sezam

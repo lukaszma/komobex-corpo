@@ -72,12 +72,12 @@ export const routes = {
     children: [
       {
         title: "Realizacje ukończone",
-        to: "/ukonczone",
+        to: "/realizacje/ukonczone",
         routeName: "ukonczone",
       },
       {
         title: "Realizacje w trakcie",
-        to: "/w-trakcie",
+        to: "/realizacje/w-trakcie",
         routeName: "w-trakcie",
       },
       // {

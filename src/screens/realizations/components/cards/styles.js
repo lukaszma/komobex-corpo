@@ -1,7 +1,29 @@
 import styled from "styled-components"
 
+export const Card = styled.div`
+  cursor: pointer;
+  position: relative;
+  min-height: 300px;
+  border-radius: 6px;
+
+  &:hover {
+    .block-title {
+      text-decoration: underline;
+    }
+  }
+
+  &.col-xxs-12 {
+    @media (max-width: 450px) {
+      width: 100%;
+    }
+  }
+`
+
 export const CardsWrapper = styled.section`
-  img {
+  margin: auto;
+  max-width: 1300px;
+  margin-top: 20px
+  /* img {
     max-width: 100%;
   }
 
@@ -31,7 +53,7 @@ export const CardsWrapper = styled.section`
 
     &__image-container {
       margin: -2rem -2rem 1rem -2rem;
-      transition: all .5s ease-out;
+      transition: all 0.5s ease-out;
     }
 
     &__line {
@@ -126,5 +148,5 @@ export const CardsWrapper = styled.section`
       opacity: 1;
       filter: blur(0);
     }
-  }
+  } */
 `

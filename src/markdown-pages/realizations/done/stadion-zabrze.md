@@ -1,10 +1,11 @@
 ---
-path: "/realizacje/stadion-zabrze"
+path: "stadion-zabrze"
 date: "2019-05-04"
 title: "Stadion Zabrze"
 imagesDirectory: "stadion-zabrze"
-mainPage: stadion-zabrze
+slug: stadion-zabrze
 tags: [C.O, WOD-KAN]
+thumb: "../../../images/realizations/arena-gliwice/DSC_0038.jpg"
 ---
 
 # Stadion Zabrze
