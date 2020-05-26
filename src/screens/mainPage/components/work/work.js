@@ -1,25 +1,49 @@
-import React, { useState } from "react"
-import classnames from "classnames"
-import { filters } from "./filter"
-import { projects } from "./projects"
-import { categoryTitles, categories } from "./categories"
-import { TransitionGroup, CSSTransition } from "react-transition-group"
-import { WorkWrapper } from "./styles"
+import React, { useState, useEffect } from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { map, sortBy } from "lodash"
+import { orderedWorkList } from "./orderedWorkList"
+import Img from "gatsby-image"
+import CustomLink from "@components/customLink/customLink"
 
 export const Work = () => {
-  const [activeFilter, setActiveFilter] = useState("all")
-  const [filteredProjects, setFilteredProjects] = useState(projects)
+  const [workList, setWorkList] = useState([])
+  const images = useStaticQuery(graphql`
+    query {
+      serviceImages: allFile(
+        filter: {
+          sourceInstanceName: { eq: "main-page-images" }
+          relativeDirectory: { eq: "works" }
+        }
+      ) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              fluid(maxWidth: 600, quality: 100) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
 
-  const onFilter = (e, id) => {
-    e.preventDefault()
-    setActiveFilter(id)
+  useEffect(() => {
+    const list = map(images.serviceImages.edges, edge => {
+      const options = orderedWorkList[edge.node.name]
+      return {
+        fluid: edge.node.childImageSharp.fluid,
+        title: options.title,
+        order: options.order,
+        to: options.to,
+      }
+    })
 
-    const _filteredProject = projects.filter(
-      project => project.subtitles.indexOf(id) !== -1
-    )
+    const orderedList = sortBy(list, item => item.order)
 
-    setFilteredProjects(_filteredProject)
-  }
+    setWorkList(orderedList)
+  }, [images])
 
   return (
     <div id="work" className="work content-section bg-grey">
@@ -34,52 +58,20 @@ export const Work = () => {
 
         <div className="row">
           <div className="col-md-12">
-            <ul className="work-filter">
-              {filters.map(filter => (
-                <li
-                  key={filter.id}
-                  className={classnames({ active: activeFilter === filter.id })}
-                >
-                  <a href="#" onClick={e => onFilter(e, filter.id)}>
-                    {filter.title}
-                  </a>
+            <ul className="work-grid">
+              {workList.map(work => (
+                <li key={work.order} className="work-item">
+                  <CustomLink to={work.to} title={work.title}>
+                    <div className="work-item-image">
+                      <Img fluid={work.fluid} />
+                    </div>
+                    <div className="work-item-info">
+                      <h4 className="work-item-title">{work.title}</h4>
+                    </div>
+                  </CustomLink>
                 </li>
               ))}
             </ul>
-
-            <WorkWrapper className="work-grid">
-              <TransitionGroup>
-                {filteredProjects.map(project => (
-                  <CSSTransition
-                    in
-                    timeout={500}
-                    classNames="item"
-                    key={project.id}
-                  >
-                    <li key={project.id} className="work-item">
-                      <a href="#" title={project.title}>
-                        <div className="work-item-image">
-                          <img src={project.imgSrc} alt={project.title} />
-                        </div>
-                        <div className="work-item-info">
-                          <h4 className="work-item-title">{project.title}</h4>
-                          {project.subtitles.map((subtitle, i) => (
-                            <span key={i}>
-                              {subtitle !== categories.ALL && (
-                                <span className="work-item-desc">
-                                  {categoryTitles[subtitle]}
-                                </span>
-                              )}
-                              <br />
-                            </span>
-                          ))}
-                        </div>
-                      </a>
-                    </li>
-                  </CSSTransition>
-                ))}
-              </TransitionGroup>
-            </WorkWrapper>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { Work } from "./components/work/work"
 import CallToAction from "./components/callToAction"
 import { About } from "./components/about"
 import { Why } from "./components/why"
-import { Testimonial } from "./components/testimonial"
+// import { Testimonial } from "./components/testimonial"
 import { Client } from "./components/client"
 
 export const MainPage = () => (
@@ -31,7 +31,7 @@ export const MainPage = () => (
       to="/kontakt"
     />
     <Why />
-    <Testimonial />
+    {/* <Testimonial /> */}
     <Client />
   </>
 )

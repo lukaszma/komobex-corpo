@@ -2,9 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import CustomLink from "@components/customLink/customLink"
 import { ServiceItemList } from "./styles"
+import Img from "gatsby-image"
 
-const ServiceItem = ({ title, imgSrc, to, list }) => (
-  <div className="col-md-4">
+const ServiceItem = ({ title, fluid, to, list }) => (
+  <div className="col-md-4 col-sm-6">
     <div className="blog-entry">
       <div className="blog-entry-header">
         <h2 className="entry-title">
@@ -12,7 +13,7 @@ const ServiceItem = ({ title, imgSrc, to, list }) => (
         </h2>
       </div>
       <CustomLink to={to}>
-        <img src={imgSrc} alt={title} className="img-responsive" />
+        <Img className="img-responsive" fluid={fluid} />
       </CustomLink>
 
       <div className="blog-entry-content">
@@ -32,7 +33,7 @@ const ServiceItem = ({ title, imgSrc, to, list }) => (
 
 ServiceItem.propTypes = {
   title: PropTypes.string,
-  imgSrc: PropTypes.string,
+  fluid: PropTypes.object,
   list: PropTypes.array,
   to: PropTypes.string,
 }

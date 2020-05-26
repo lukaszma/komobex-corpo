@@ -1,4 +1,13 @@
 import styled from "styled-components"
+import BackgroundImage from "gatsby-background-image"
+
+export const HeroContainer = styled(BackgroundImage)`
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+`
 
 export const StyledHeader = styled.div`
   position: relative;
