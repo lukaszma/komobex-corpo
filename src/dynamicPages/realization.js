@@ -7,14 +7,15 @@ import { graphql } from "gatsby"
 const Realization = ({ data }) => {
   const { markdownRemark, images } = data
   const { frontmatter, html } = markdownRemark
+
   return (
     <div id="home" className="home">
       <Layout>
-        asd
         <RealizationScreen
           frontmatter={frontmatter}
           html={html}
           images={images}
+          pdf={frontmatter.pdf.publicURL}
         />
       </Layout>
     </div>
@@ -28,6 +29,9 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        pdf {
+          publicURL
+        }
       }
     }
     images: allFile(

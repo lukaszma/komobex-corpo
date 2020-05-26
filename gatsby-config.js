@@ -26,6 +26,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `realizations-pdfs`,
+        path: `${__dirname}/src/assets/pdfs`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: "realizations-options-images",
         path: `${__dirname}/src/images/realizations-options`,
       },

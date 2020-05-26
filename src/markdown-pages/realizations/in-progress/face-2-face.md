@@ -6,6 +6,7 @@ imagesDirectory: "face-2-face"
 slug: face-2-face
 tags: [C.O, WOD-KAN]
 thumb: "../../../images/realizations/arena-gliwice/DSC_0038.jpg"
+pdf: "../../../assets/pdfs/arena-gliwice.pdf"
 ---
 
 # Face 2 Face

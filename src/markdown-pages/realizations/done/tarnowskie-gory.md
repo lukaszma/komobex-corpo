@@ -6,6 +6,7 @@ imagesDirectory: "tarnowskie-gory"
 slug: tarnowskie-gory
 tags: [C.O, WOD-KAN]
 thumb: "../../../images/realizations/arena-gliwice/DSC_0038.jpg"
+pdf: "../../../assets/pdfs/arena-gliwice.pdf"
 ---
 
 # Tarnowskie Góry

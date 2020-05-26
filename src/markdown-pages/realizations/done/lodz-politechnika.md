@@ -6,6 +6,7 @@ imagesDirectory: "lodz-politechnika"
 slug: lodz-politechnika
 tags: [C.O, WOD-KAN]
 thumb: "../../../images/realizations/arena-gliwice/DSC_0038.jpg"
+pdf: "../../../assets/pdfs/arena-gliwice.pdf"
 ---
 
 # Łódź Politechnika
