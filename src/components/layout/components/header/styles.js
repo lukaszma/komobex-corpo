@@ -62,48 +62,43 @@ export const StyledHeader = styled.div`
     background-color: #fff !important;
     position: fixed !important;
     top: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: relative;
     line-height: 18px;
-    transition: all 200ms ease-out;
+    transition: top 300ms ease-out;
     display: flex;
     padding: 10px 0;
+    right: 60px;
+    left: 60px;
+    margin-right: auto;
+    margin-left: auto;
 
-    @media screen and (max-width: 767px) {
-      width: 90%;
+    @media screen and (max-width: 544px) {
+      left: 30px;
+      right: 30px;
     }
 
     &.sticky-bar {
-      width: 100%;
       top: 0;
+      left: 0;
+      right: 0;
     }
 
     .container {
+      width: 100%;
       display: flex;
       align-items: center;
 
       .site-branding {
-        /* display: inline-block; */
-
         .title-image {
           padding-top: 0px;
 
           img {
             max-height: none !important;
             margin-bottom: 0;
-
-            @media screen and (max-width: 767px) {
-              max-height: 50px !important;
-              width: 500px;
-            }
           }
         }
       }
 
       .main-navigation {
-        /* display: inline-block; */
-
         .menu-toggle {
           display: none;
 

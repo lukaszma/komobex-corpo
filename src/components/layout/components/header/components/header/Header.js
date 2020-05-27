@@ -31,14 +31,13 @@ const Header = ({ currentRouteOptions, isHeaderSticky, onMenuClick }) => {
       role="banner"
     >
       <div className="container">
-        <div className="site-branding">
+        <div style={{ width: "200px" }} className="site-branding">
           <h1 className="site-title title-image">
             <CustomLink to="/">
               <Img
                 className="img-responsive"
                 fluid={images.logo.childImageSharp.fluid}
               />
-              <div>asd</div>
             </CustomLink>
           </h1>
         </div>

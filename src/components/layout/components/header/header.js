@@ -41,7 +41,7 @@ const Header = ({ isHeaderSticky, currentRouteOptions }) => {
         isHeaderSticky={isHeaderSticky}
         onMenuClick={onMenuClick}
       />
-      <HeroContainer
+      {currentRouteOptions.hasHeroImage && <HeroContainer
         style={
           currentRouteOptions.hasHeroImage
             ? {
@@ -78,7 +78,7 @@ const Header = ({ isHeaderSticky, currentRouteOptions }) => {
             </div>
           </div>
         )}
-      </HeroContainer>
+      </HeroContainer>}
       {isMenuOpen && <Menu onCloseClick={onCloseMenuClick} />}
     </StyledHeader>
   )

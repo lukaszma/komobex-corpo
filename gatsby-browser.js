@@ -10,6 +10,8 @@
 import "./src/styles/global.css"
 import "./node_modules/react-image-gallery/styles/css/image-gallery.css"
 import 'react-tabs/style/react-tabs.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const onClientEntry = () => {
     // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)

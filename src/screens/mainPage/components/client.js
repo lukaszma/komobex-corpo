@@ -1,92 +1,114 @@
 import React from "react"
-import Slider from "infinite-react-carousel"
+import Slider from "react-slick"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import styled from "styled-components"
+
+const CustomSlider = styled(Slider)`
+  .slick-track {
+    display: flex;
+    align-items: center;
+
+    .custom-slick-item {
+      padding: 0 10px;
+    }
+  }
+`
 
 export const Client = () => {
   const settings = {
-    accessibility: false,
-    arrows: false,
-    arrowsBlock: false,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
-    centerPadding: 10,
-    overScan: 1,
+    autoplaySpeed: 1300,
     pauseOnHover: false,
-    swipe: false,
-    virtualList: true,
+    pauseOnFocus: false,
+    arrows: false,
+    rows: 1,
+    responsive: [
+      {
+        breakpoint: 1680,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 4,
+          centerMode: true,
+          centerPadding: "50px",
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "20px",
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "20px",
+          slidesToShow: 3,
+          autoplay: false,
+        },
+      },
+      {
+        breakpoint: 470,
+        settings: {
+          arrows: false,
+          autoplay: true,
+          slidesToShow: 2,
+          centerPadding: "0px",
+        },
+      },
+    ],
   }
+
+  const images = useStaticQuery(graphql`
+    query {
+      serviceImages: allFile(
+        filter: {
+          sourceInstanceName: { eq: "main-page-images" }
+          relativeDirectory: { eq: "clients" }
+        }
+      ) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              fluid(maxWidth: 300, quality: 100) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <div
       id="client"
       className="client block-section bg-white padd-40-top padd-40-btm"
+      style={{ width: "100%" }}
     >
-      {/* <Slider autoplay>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-      </Slider> */}
+      <CustomSlider {...settings}>
+        {images.serviceImages.edges.map(edge => (
+          <div className="custom-slick-item" key={edge.node.name}>
+            <Img fluid={edge.node.childImageSharp.fluid} />
+          </div>
+        ))}
+      </CustomSlider>
+
       <div className="container">
         <div className="row">
-          <div className="col-md-12">
-            {/* <div
-              id="slider-thumbnail"
-              className="owl-carousel owl-theme client-slider slider-carousel navigation-hide"
-            > */}
-            <Slider { ...settings }>
-              <div className="item">
-                <a href="#">
-                  <img src="../../../img-client-01.png" alt="client" />
-                </a>
-              </div>
-              <div className="item">
-                <a href="#">
-                  <img src="../../../img-client-02.png" alt="client" />
-                </a>
-              </div>
-              <div className="item">
-                <a href="#">
-                  <img src="../../../img-client-03.png" alt="client" />
-                </a>
-              </div>
-              <div className="item">
-                <a href="#">
-                  <img src="../../../img-client-04.png" alt="client" />
-                </a>
-              </div>
-              <div className="item">
-                <a href="#">
-                  <img src="../../../img-client-05.png" alt="client" />
-                </a>
-              </div>
-              <div className="item">
-                <a href="#">
-                  <img src="../../../img-client-06.png" alt="client" />
-                </a>
-              </div>
-              <div className="item">
-                <a href="#">
-                  <img src="../../../img-client-07.png" alt="client" />
-                </a>
-              </div>
-              <div className="item">
-                <a href="#">
-                  <img src="../../../img-client-08.png" alt="client" />
-                </a>
-              </div>
-            </Slider>
-            {/* </div> */}
-          </div>
+          <div className="col-md-12"></div>
         </div>
       </div>
     </div>
