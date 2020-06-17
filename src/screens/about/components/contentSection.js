@@ -22,7 +22,6 @@ export const ContentSection = () => {
       }
     }
   `)
-console.log(images)
   return (
     <div className="about content-section">
       <div className="container">

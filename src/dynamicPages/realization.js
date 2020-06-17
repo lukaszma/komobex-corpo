@@ -15,7 +15,7 @@ const Realization = ({ data }) => {
           frontmatter={frontmatter}
           html={html}
           images={images}
-          pdf={frontmatter.pdf.publicURL}
+          pdf={frontmatter.pdf?.publicURL}
         />
       </Layout>
     </div>

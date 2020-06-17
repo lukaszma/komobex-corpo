@@ -24,6 +24,7 @@ export const Client = () => {
     pauseOnFocus: false,
     arrows: false,
     rows: 1,
+    slidesToShow: 4,
     responsive: [
       {
         breakpoint: 1680,

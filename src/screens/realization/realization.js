@@ -50,9 +50,9 @@ const RealizationScreen = ({ html, images, pdf }) => {
             dangerouslySetInnerHTML={{ __html: html }}
           />
           <div>
-            <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
+            {pdf && <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
               <Page pageNumber={pageNumber} renderAnnotationLayer={false} />
-            </Document>
+            </Document>}
             {numPages > 1 && (
               <div>
                 <p>
