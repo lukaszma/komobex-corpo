@@ -1,17 +1,21 @@
+/* eslint-disable no-undef */
 import React from "react"
 import PropTypes from "prop-types"
 import ImageGallery from "react-image-gallery"
-import { map } from "lodash"
+import { map, filter } from "lodash"
 // import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 // import { Document, Page } from "react-pdf"
 // import { ReferenceTab, Button } from "./style"
 
 const RealizationScreen = ({ html, images }) => {
-  const mappedImages = map(images.edges, edge => ({
-    original: edge.node.childImageSharp.fluid.src,
-    thumbnail: edge.node.childImageSharp.fluid.src,
-    srcSet: edge.node.childImageSharp.fluid.srcSet,
-  }))
+  const mappedImages = map(
+    filter(images.edges, e => e.node.childImageSharp),
+    edge => ({
+      original: edge.node.childImageSharp?.fluid.src,
+      thumbnail: edge.node.childImageSharp?.fluid.src,
+      srcSet: edge.node.childImageSharp?.fluid.srcSet,
+    })
+  )
 
   // const [numPages, setNumPages] = useState(null)
   // const [pageNumber, setPageNumber] = useState(1)
