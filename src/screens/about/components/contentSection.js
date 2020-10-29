@@ -155,7 +155,7 @@ export const ContentSection = () => {
         <Section className="row">
           <div className="col-sm-12">
             <ManagementSection>
-              <div className="title">Zarząd firmy</div>
+              <div className="title">Kierownictwo firmy</div>
               <div className="item">
                 <span className="key">Prezes Zarządu:</span>&nbsp;
                 <span className="value">mgr inż. Tomasz Śledzikowski</span>

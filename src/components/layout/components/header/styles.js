@@ -150,7 +150,7 @@ export const StyledHeader = styled.div`
 
   .header-caption {
     padding: 0;
-    margin-top: 186px;
+    margin-top: 314px;
     text-align: center;
 
     .caption-title {
