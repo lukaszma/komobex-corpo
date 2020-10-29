@@ -5,7 +5,7 @@ title: "Park wodny w Częstochowie"
 imagesDirectory: "park-wodny-w-czestochowie"
 slug: park-wodny-w-czestochowie
 tags: [C.O, WOD-KAN]
-thumb: "../../../images/realizations/park-wodny-w-czestochowie/IMG_20201016_085755-600x400.jpg"
+thumb: "../../../images/realizations/park-wodny-w-czestochowie/Resized_20201016_091003.jpeg"
 pdf: "../../../assets/pdfs/park-wodny-w-czestochowie.pdf"
 order: 12
 ---
