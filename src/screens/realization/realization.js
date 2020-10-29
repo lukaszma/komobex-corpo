@@ -88,7 +88,7 @@ const RealizationScreen = ({ html, images }) => {
 RealizationScreen.propTypes = {
   frontmatter: PropTypes.object,
   html: PropTypes.string,
-  pdf: PropTypes.string,
+  // pdf: PropTypes.string,
   images: PropTypes.shape({
     edges: PropTypes.array,
   }),

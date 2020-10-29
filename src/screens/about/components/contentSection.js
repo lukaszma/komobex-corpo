@@ -16,6 +16,24 @@ const Image = styled(Img)`
   height: 300px;
 `
 
+const ManagementSection = styled.div`
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .item {
+    margin-top: 10px;
+    span {
+      font-size: 14px;
+
+      &.key {
+        font-weight: 600;
+      }
+    }
+  }
+`
+
 export const ContentSection = () => {
   const images = useStaticQuery(graphql`
     query {
@@ -132,6 +150,28 @@ export const ContentSection = () => {
               fluid={images.aboutImages.edges[2].node.childImageSharp.fluid}
               alt={images.aboutImages.edges[2].node.name}
             />
+          </div>
+        </Section>
+        <Section className="row">
+          <div className="col-sm-12">
+            <ManagementSection>
+              <div className="title">Zarząd firmy</div>
+              <div className="item">
+                <span className="key">Prezes Zarządu:</span>&nbsp;
+                <span className="value">mgr inż. Tomasz Śledzikowski</span>
+              </div>
+              <div className="item">
+                <span className="key">Prokurent:</span>&nbsp;
+                <span className="value">Danuta Matyja</span>
+              </div>
+              <div className="item">
+                <span className="key">
+                  Dyrektor przygotowania i realizacji kontraktów:
+                </span>
+                &nbsp;
+                <span className="value">mgr inż. Łukasz Kozłowski</span>
+              </div>
+            </ManagementSection>
           </div>
         </Section>
       </div>

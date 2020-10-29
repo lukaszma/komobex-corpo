@@ -7,6 +7,7 @@ slug: kompostownia-w-knurowie
 tags: [C.O, WOD-KAN]
 thumb: "../../../images/realizations/kompostownia-w-knurowie/3.jpg"
 pdf: "../../../assets/pdfs/arena-gliwice.pdf"
+order: 18
 ---
 
 # Kompostownia w Knurowie

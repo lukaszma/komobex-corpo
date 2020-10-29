@@ -7,6 +7,7 @@ slug: stadion-zabrze
 tags: [C.O, WOD-KAN]
 thumb: "../../../images/realizations/stadion-zabrze/DSC00186.JPG"
 pdf: "../../../assets/pdfs/stadion-zabrze.pdf"
+order: 2
 ---
 
 # Stadion Zabrze

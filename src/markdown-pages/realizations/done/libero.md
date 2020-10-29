@@ -1,12 +1,13 @@
 ---
-path: "libero"
+path: "galeria-handlowa-libero"
 date: "2019-05-04"
-title: "Libero"
+title: "Galeria handlowa Libero"
 imagesDirectory: "libero"
-slug: libero
+slug: galeria-handlowa-libero
 tags: [C.O, WOD-KAN]
 thumb: "../../../images/realizations/libero/IMG_20180928_114656-kopia.jpg"
 pdf: "../../../assets/pdfs/libero.pdf"
+order: 11
 ---
 
-# Libero
+# Galeria handlowa Libero

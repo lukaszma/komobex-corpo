@@ -25,6 +25,16 @@ export const routes = {
     },
     hasBreadcrumbs: true,
   },
+  referencje: {
+    title: "Referencje",
+    to: "/referencje",
+    pageTitle: {
+      title: "Referencje",
+      subtitle:
+        "Wybrane zadania zrealizowane przez PPH Komobex-Inel Sp. z o.o.",
+    },
+    hasBreadcrumbs: true,
+  },
   // uslugi: {
   //   title: "Usługi",
   //   to: "/uslugi",
@@ -35,12 +45,12 @@ export const routes = {
   //   hasBreadcrumbs: true,
   //   children: [
   //     {
-  //       title: "Instalacje sanitarne zewnętrzne",
+  //       title: "Instalacje i sieci zewnętrzne",
   //       to: "/instalacje-sanitarne-zewnetrzne",
   //       routeName: "instalacje-sanitarne-zewnetrzne",
   //     },
   //     {
-  //       title: "Instalacje sanitarne wenętrzne",
+  //       title: "Instalacje wenętrzne",
   //       to: "/instalacje-sanitarne-wewnetrzne",
   //       routeName: "instalacje-sanitarne-wewnetrzne",
   //     },

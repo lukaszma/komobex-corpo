@@ -7,6 +7,7 @@ slug: kompostownia-konopiska
 tags: [C.O, WOD-KAN]
 thumb: "../../../images/realizations/kompostownia-konopiska/Budowa-Kompostowni-w-Konopiskach.jpg"
 pdf: "../../../assets/pdfs/arena-gliwice.pdf"
+order: 17
 ---
 
 # Kompostownia Konopiska

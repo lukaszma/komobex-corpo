@@ -1,12 +1,13 @@
 ---
 path: "wroclavia"
 date: "2019-05-04"
-title: "Wroclavia"
+title: "Galeria handlowa Wroclavia"
 imagesDirectory: "wroclavia"
 slug: wroclavia
 tags: [C.O, WOD-KAN]
-thumb: "../../../images/realizations/wroclavia/064323_r0_940.jpg"
+thumb: "../../../images/realizations/wroclavia/Galeria.jpg"
 pdf: "../../../assets/pdfs/wroclavia.pdf"
+order: 1
 ---
 
-# Wroclavia
+# Galeria handlowa Wroclavia

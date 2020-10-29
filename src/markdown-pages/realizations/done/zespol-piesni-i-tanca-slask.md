@@ -7,6 +7,7 @@ slug: zespol-piesni-i-tanca-slask
 tags: [C.O, WOD-KAN]
 thumb: "../../../images/realizations/zespol-piesni-i-tanca-slask/d70ed27f2032c302d764a57090bd5865.jpg"
 pdf: "../../../assets/pdfs/zespol-piesni-i-tanca-slask.pdf"
+order: 6
 ---
 
 # Zespół pieśni i tańca śląsk

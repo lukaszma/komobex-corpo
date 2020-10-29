@@ -1,5 +1,5 @@
 import React from "react"
 
-const Inside = () => <div>Instalacje sanitarne wenętrzne</div>
+const Inside = () => <div>Instalacje wenętrzne</div>
 
 export default Inside

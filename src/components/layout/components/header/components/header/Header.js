@@ -84,7 +84,7 @@ const Header = ({ currentRouteOptions, isHeaderSticky, onMenuClick }) => {
                 <ul className="sub-menu">
                   <li className="menu-item">
                     <CustomLink to="/uslugi/instalacje-sanitarne-zewnetrzne">
-                      Instalacje sanitarne zewnętrzne
+                      Instalacje i sieci zewnętrzne
                     </CustomLink>
                   </li>
                   <li className="menu-item">
@@ -116,6 +116,13 @@ const Header = ({ currentRouteOptions, isHeaderSticky, onMenuClick }) => {
                 })}
               >
                 <CustomLink to="/realizacje">Realizacje</CustomLink>
+              </li>
+              <li
+                className={classnames("menu-item", {
+                  "current-menu-item": currentRouteOptions.to === "/referencje",
+                })}
+              >
+                <CustomLink to="/referencje">Referencje</CustomLink>
               </li>
 
               <li

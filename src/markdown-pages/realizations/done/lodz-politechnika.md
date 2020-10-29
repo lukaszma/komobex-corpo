@@ -7,6 +7,7 @@ slug: lodz-politechnika
 tags: [C.O, WOD-KAN]
 thumb: "../../../images/realizations/lodz-politechnika/DSC_0909 — kopia.jpg"
 pdf: "../../../assets/pdfs/lodz-politechnika.pdf"
+order: 8
 ---
 
 # Łódź Politechnika

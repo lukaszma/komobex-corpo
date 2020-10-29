@@ -1297,7 +1297,7 @@ hr {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -15px;
   background-color: transparent;
   -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
   -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);

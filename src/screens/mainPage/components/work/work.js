@@ -10,6 +10,10 @@ const Image = styled(Img)`
   height: 300px;
 `
 
+const ContainerItem = styled.li`
+  padding-right: 15px !important;
+`
+
 export const Work = () => {
   const [workList, setWorkList] = useState([])
   const images = useStaticQuery(graphql`
@@ -65,7 +69,7 @@ export const Work = () => {
           <div className="col-md-12">
             <ul className="work-grid">
               {workList.map(work => (
-                <li key={work.order} className="work-item">
+                <ContainerItem key={work.order} className="work-item">
                   <CustomLink to={work.to} title={work.title}>
                     <div className="work-item-image">
                       <Image fluid={work.fluid} />
@@ -74,7 +78,7 @@ export const Work = () => {
                       <h4 className="work-item-title">{work.title}</h4>
                     </div>
                   </CustomLink>
-                </li>
+                </ContainerItem>
               ))}
             </ul>
           </div>

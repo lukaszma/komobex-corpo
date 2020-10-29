@@ -7,6 +7,7 @@ slug: mck
 tags: [C.O, WOD-KAN]
 thumb: "../../../images/realizations/mck/biuro-ktw-i_3.jpg"
 pdf: "../../../assets/pdfs/mck.pdf"
+order: 5
 ---
 
 # MCK

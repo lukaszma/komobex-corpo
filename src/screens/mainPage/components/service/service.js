@@ -44,7 +44,7 @@ export const Service = () => {
       <div className="container">
         <div className="row">
           <ServiceItem
-            title="Instalacje sanitarne zewnętrzne"
+            title="Instalacje i sieci zewnętrzne"
             list={[
               "instalacje wodociągowe",
               "kanalizacje sanitarne",
@@ -57,7 +57,7 @@ export const Service = () => {
           />
 
           <ServiceItem
-            title="Instalacje sanitarne wenętrzne"
+            title="Instalacje wenętrzne"
             list={[
               "instalacje wodno-kanalizacyjne",
               "instalacje centralnego ogrzewania",

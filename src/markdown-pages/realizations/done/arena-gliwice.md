@@ -7,6 +7,7 @@ slug: arena-gliwice
 tags: [C.O, WOD-KAN]
 thumb: "../../../images/realizations/arena-gliwice/743263_kAcm_iwice20Marcin20Baranowski202_83.jpg"
 pdf: "../../../assets/pdfs/arena-gliwice.pdf"
+order: 3
 ---
 
 # Arena Gliwice

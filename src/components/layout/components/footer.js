@@ -59,6 +59,9 @@ const Footer = () => {
                   <CustomLink to="/realizacje">Realizacje</CustomLink>
                 </li>
                 <li>
+                  <CustomLink to="/referencje">Referencje</CustomLink>
+                </li>
+                <li>
                   <CustomLink to="/kontakt">Kontakt</CustomLink>
                 </li>
               </ul>
@@ -71,7 +74,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <CustomLink to="/uslugi/instalacje-sanitarne-zewnetrzne">
-                    Instalacje sanitarne zewnętrzne
+                    Instalacje i sieci zewnętrzne
                   </CustomLink>
                 </li>
                 <li>

@@ -15,7 +15,7 @@ const Realization = ({ data }) => {
           frontmatter={frontmatter}
           html={html}
           images={images}
-          pdf={frontmatter.pdf?.publicURL}
+          // pdf={frontmatter.pdf?.publicURL}
         />
       </Layout>
     </div>
@@ -29,9 +29,6 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
-        pdf {
-          publicURL
-        }
       }
     }
     images: allFile(

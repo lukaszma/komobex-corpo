@@ -30,6 +30,7 @@ export const query = graphql`
           frontmatter {
             title
             path
+            order
             thumb {
               childImageSharp {
                 fluid(maxWidth: 400, quality: 100) {

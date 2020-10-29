@@ -7,6 +7,7 @@ slug: kino-muza-w-sosnowcu
 tags: [C.O, WOD-KAN]
 thumb: "../../../images/realizations/kino-muza-w-sosnowcu/39f6693ea5886bec40d59e8ae8117d53.jpg"
 pdf: "../../../assets/pdfs/kino-muza-w-sosnowcu.pdf"
+order: 9
 ---
 
 # Kino Muza w Sosnowcu
