@@ -5,6 +5,7 @@ export const Card = styled.div`
   position: relative;
   min-height: 300px;
   border-radius: 6px;
+  height: 340px;
 
   &:hover {
     .block-title {
