@@ -5,11 +5,8 @@ title: "Sagitarius"
 imagesDirectory: "sagitarius"
 slug: sagitarius
 tags: [C.O, WOD-KAN]
-thumb: "../../../images/realizations/arena-gliwice/DSC_0038.jpg"
-pdf: "../../../assets/pdfs/arena-gliwice.pdf"
+thumb: "../../../images/realizations/sagitarius/IMG_20190904_131621 — kopia.jpg"
+pdf: "../../../assets/pdfs/sagitarius.pdf"
 ---
 
 # Sagitarius
-
-W ramach projektu Sagitarius wykonaliśmy szereg instalacji 
-ten tekst został wygenerowany z pliku w którym można formatować tekst

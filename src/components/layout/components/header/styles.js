@@ -150,7 +150,7 @@ export const StyledHeader = styled.div`
 
   .header-caption {
     padding: 0;
-    margin-top: 345px;
+    margin-top: 186px;
     text-align: center;
 
     .caption-title {
@@ -158,6 +158,7 @@ export const StyledHeader = styled.div`
       text-transform: lowercase;
       font-size: 27px;
       font-style: italic;
+      text-shadow: 1px 1px #000;
     }
   }
 

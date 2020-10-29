@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 export const About = () => {
@@ -55,11 +55,11 @@ export const About = () => {
               jak: wszechstronny rozwój przedsiębiorstwa, wysoki poziom
               świadczonych usług oraz zadowolenie klienta
             </p>
-            <p>
+            {/* <p>
               <Link className="button btn-danger popup-video" to="/uslugi">
                 <i className="fa fa-wrench"></i> Sprawdź nasze usługi
               </Link>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

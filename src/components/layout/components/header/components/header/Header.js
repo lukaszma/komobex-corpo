@@ -74,7 +74,7 @@ const Header = ({ currentRouteOptions, isHeaderSticky, onMenuClick }) => {
               >
                 <CustomLink to="/o-firmie">O firmie</CustomLink>
               </li>
-              <li
+              {/* <li
                 className={classnames("menu-item", "menu-item-has-children", {
                   "current-menu-item": currentRouteOptions.to === "/uslugi",
                 })}
@@ -108,7 +108,7 @@ const Header = ({ currentRouteOptions, isHeaderSticky, onMenuClick }) => {
                     </CustomLink>
                   </li>
                 </ul>
-              </li>
+              </li> */}
 
               <li
                 className={classnames("menu-item", {

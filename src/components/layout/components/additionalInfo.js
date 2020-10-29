@@ -49,7 +49,7 @@ const AdditionalInfo = () => (
                   </div>
                   <h4 className="contact-item-title">Adres:</h4>
                   <div className="contact-item-info">
-                    Częstochowa ul. Dekabrystów 41
+                    Częstochowa ul. Srebrna 61/63
                   </div>
                 </div>
               </div>

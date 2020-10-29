@@ -2,12 +2,26 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
+
+const Section = styled.div`
+  margin: 50px 0;
+
+  p {
+    padding: 0;
+  }
+`
+
+const Image = styled(Img)`
+  height: 300px;
+`
 
 export const ContentSection = () => {
   const images = useStaticQuery(graphql`
     query {
       aboutImages: allFile(
         filter: { sourceInstanceName: { eq: "about-page-images" } }
+        sort: { fields: name }
       ) {
         edges {
           node {
@@ -25,9 +39,9 @@ export const ContentSection = () => {
   return (
     <div className="about content-section">
       <div className="container">
-        <div className="row">
+        <Section className="row">
           <div className="col-sm-6">
-            <Img
+            <Image
               fluid={images.aboutImages.edges[0].node.childImageSharp.fluid}
               alt={images.aboutImages.edges[0].node.name}
             />
@@ -44,11 +58,11 @@ export const ContentSection = () => {
               w takim samym stopniu.
             </p>
           </div>
-        </div>
-        <div className="row">
+        </Section>
+        <Section className="row">
           <div className="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 padd-40-top">
             <p>
-              Wiedzę oraz technologię doskonalimy już od ponad 25 lat wykonując
+              Wiedzę oraz technologię doskonalimy już od ponad 29 lat wykonując
               projekty na terenie całego kraju, zdobywając tym samym zaufanie
               naszych Klientów. Wyspecjalizowana kadra z różnych dziedzin,
               licząca ponad 150 pracowników oraz rozbudowany park maszynowy
@@ -57,13 +71,13 @@ export const ContentSection = () => {
             </p>
           </div>
           <div className="col-sm-6">
-            <Img
+            <Image
               fluid={images.aboutImages.edges[1].node.childImageSharp.fluid}
               alt={images.aboutImages.edges[1].node.name}
             />
           </div>
-        </div>
-        <div className="row">
+        </Section>
+        <Section className="row">
           <div className="col-sm-12">
             <p>Komobex Inel to gwarancja jakości oparta na:</p>
             <ul>
@@ -101,8 +115,8 @@ export const ContentSection = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div className="row">
+        </Section>
+        <Section className="row">
           <div className="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 padd-40-top">
             <p></p>
             <p>
@@ -114,12 +128,12 @@ export const ContentSection = () => {
             </p>
           </div>
           <div className="col-sm-6">
-            <Img
+            <Image
               fluid={images.aboutImages.edges[2].node.childImageSharp.fluid}
               alt={images.aboutImages.edges[2].node.name}
             />
           </div>
-        </div>
+        </Section>
       </div>
     </div>
   )

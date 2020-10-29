@@ -8,7 +8,7 @@ export const Facts = () => (
           <div className="fact-item">
             <span className="fact-item-number">
               <span className="pe-7s-alarm icon"></span>
-              <span className="number number-alt">25+</span>
+              <span className="number number-alt">29+</span>
             </span>
             <h5 className="fact-item-info">Lat doświadczenia</h5>
           </div>

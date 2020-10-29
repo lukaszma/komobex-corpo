@@ -3,6 +3,17 @@ import { Card, CardsWrapper } from "./styles"
 import CustomLink from "@components/customLink/customLink"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
+import styled from "styled-components"
+
+const Image = styled(Img)`
+  height: 200px;
+`
+
+const Title = styled.h3`
+  color: #000;
+  font-style: italic;
+  text-align: center;
+`
 
 const Cards = ({ realizationsList, prefix }) => {
   return (
@@ -19,7 +30,7 @@ const Cards = ({ realizationsList, prefix }) => {
               >
                 <div className="image-holder image--landscape">
                   {realization.node.frontmatter.thumb && (
-                    <Img
+                    <Image
                       fluid={
                         realization.node.frontmatter.thumb.childImageSharp.fluid
                       }
@@ -27,9 +38,9 @@ const Cards = ({ realizationsList, prefix }) => {
                   )}
                 </div>
                 <div className="project-name">
-                  <h3 className="block-title">
+                  <Title className="block-title">
                     {realization.node.frontmatter.title}
-                  </h3>
+                  </Title>
                 </div>
               </CustomLink>
             </div>

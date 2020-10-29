@@ -4,6 +4,11 @@ import { map, sortBy } from "lodash"
 import { orderedWorkList } from "./orderedWorkList"
 import Img from "gatsby-image"
 import CustomLink from "@components/customLink/customLink"
+import styled from "styled-components"
+
+const Image = styled(Img)`
+  height: 300px;
+`
 
 export const Work = () => {
   const [workList, setWorkList] = useState([])
@@ -63,7 +68,7 @@ export const Work = () => {
                 <li key={work.order} className="work-item">
                   <CustomLink to={work.to} title={work.title}>
                     <div className="work-item-image">
-                      <Img fluid={work.fluid} />
+                      <Image fluid={work.fluid} />
                     </div>
                     <div className="work-item-info">
                       <h4 className="work-item-title">{work.title}</h4>

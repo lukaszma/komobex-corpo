@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react"
 import { Link } from "gatsby"
 import { Location } from "@reach/router"
@@ -7,7 +8,10 @@ import { getLinkDetailsByRoute } from "../../enums/routesEnum"
 export const Breadcrumbs = () => (
   <Location>
     {({ location }) => {
-      const routes = location.pathname.split("/")
+      let routes = location.pathname.split("/")
+
+      !routes[routes.length - 1] &&
+        (routes = routes.slice(0, routes.length - 1))
 
       return (
         <div className="breadcrumbs">

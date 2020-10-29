@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react"
 import Layout from "@components/layout/layout"
 import { Cards } from "@screens/realizations/components"
@@ -7,7 +8,10 @@ import PropTypes from "prop-types"
 const RealizationsDone = ({ data }) => (
   <div id="realizations-done" className="realizations-done">
     <Layout>
-      <Cards realizationsList={data.allMarkdownRemark.edges} prefix="ukonczone" />
+      <Cards
+        realizationsList={data.allMarkdownRemark.edges}
+        prefix="ukonczone"
+      />
     </Layout>
   </div>
 )

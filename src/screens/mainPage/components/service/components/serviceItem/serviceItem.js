@@ -1,20 +1,26 @@
 import React from "react"
 import PropTypes from "prop-types"
-import CustomLink from "@components/customLink/customLink"
+// import CustomLink from "@components/customLink/customLink"
 import { ServiceItemList } from "./styles"
 import Img from "gatsby-image"
+import styled from "styled-components"
+
+const Image = styled(Img)`
+  height: 300px;
+`
 
 const ServiceItem = ({ title, fluid, to, list }) => (
   <div className="col-md-4 col-sm-6">
     <div className="blog-entry">
       <div className="blog-entry-header">
         <h2 className="entry-title">
-          <CustomLink to={to}>{title}</CustomLink>
+          {title}
+          {/* <CustomLink to={to}>{title}</CustomLink> */}
         </h2>
       </div>
-      <CustomLink to={to}>
-        <Img className="img-responsive" fluid={fluid} />
-      </CustomLink>
+      {/* <CustomLink to={to}> */}
+      <Image className="img-responsive" fluid={fluid} />
+      {/* </CustomLink> */}
 
       <div className="blog-entry-content">
         <ServiceItemList>

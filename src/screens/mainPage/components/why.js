@@ -71,7 +71,7 @@ export const Why = () => {
                 <span className="process-item-number">2</span>
                 <h3 className="process-item-title">DOŚWIADCZENIE</h3>
                 <p>
-                  Firma instniejąca na rynku przeszło 25 lat wraz z kadrą ponad
+                  Firma instniejąca na rynku przeszło 29 lat wraz z kadrą ponad
                   150 wykwalifikowanych pracowników, realizuje jako generalny
                   wykonawca lub podwykonawca wiele zadań z zakresu inwestycji
                   budownictwa ogólnego, komunalnego i przemysłowego.

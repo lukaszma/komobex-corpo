@@ -5,11 +5,8 @@ title: "Stadion Zabrze"
 imagesDirectory: "stadion-zabrze"
 slug: stadion-zabrze
 tags: [C.O, WOD-KAN]
-thumb: "../../../images/realizations/arena-gliwice/DSC_0038.jpg"
-pdf: "../../../assets/pdfs/arena-gliwice.pdf"
+thumb: "../../../images/realizations/stadion-zabrze/DSC00186.JPG"
+pdf: "../../../assets/pdfs/stadion-zabrze.pdf"
 ---
 
 # Stadion Zabrze
-
-W ramach projektu Stadion Zabrze wykonaliśmy szereg instalacji 
-ten tekst został wygenerowany z pliku w którym można formatować tekst

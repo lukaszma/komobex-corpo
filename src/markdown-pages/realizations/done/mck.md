@@ -5,11 +5,8 @@ title: "MCK"
 imagesDirectory: "mck"
 slug: mck
 tags: [C.O, WOD-KAN]
-thumb: "../../../images/realizations/arena-gliwice/DSC_0038.jpg"
-pdf: "../../../assets/pdfs/arena-gliwice.pdf"
+thumb: "../../../images/realizations/mck/biuro-ktw-i_3.jpg"
+pdf: "../../../assets/pdfs/mck.pdf"
 ---
 
 # MCK
-
-W ramach projektu MCK wykonaliśmy szereg instalacji 
-ten tekst został wygenerowany z pliku w którym można formatować tekst

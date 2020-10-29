@@ -25,42 +25,42 @@ export const routes = {
     },
     hasBreadcrumbs: true,
   },
-  uslugi: {
-    title: "Usługi",
-    to: "/uslugi",
-    pageTitle: {
-      title: "Usługi",
-      subtitle: "Co możemy zrobić dla Ciebie.",
-    },
-    hasBreadcrumbs: true,
-    children: [
-      {
-        title: "Instalacje sanitarne zewnętrzne",
-        to: "/instalacje-sanitarne-zewnetrzne",
-        routeName: "instalacje-sanitarne-zewnetrzne",
-      },
-      {
-        title: "Instalacje sanitarne wenętrzne",
-        to: "/instalacje-sanitarne-wewnetrzne",
-        routeName: "instalacje-sanitarne-wewnetrzne",
-      },
-      {
-        title: "Instalacje przemysłowe",
-        to: "/instalacje-przemyslowe",
-        routeName: "instalacje-przemyslowe",
-      },
-      {
-        title: "Usługi dźwigowe",
-        to: "/uslugi-dzwigowe",
-        routeName: "uslugi-dzwigowe",
-      },
-      {
-        title: "Wynajem mieszkań",
-        to: "/wynajem-mieszkan",
-        routeName: "wynajem-mieszkan",
-      },
-    ],
-  },
+  // uslugi: {
+  //   title: "Usługi",
+  //   to: "/uslugi",
+  //   pageTitle: {
+  //     title: "Usługi",
+  //     subtitle: "Co możemy zrobić dla Ciebie.",
+  //   },
+  //   hasBreadcrumbs: true,
+  //   children: [
+  //     {
+  //       title: "Instalacje sanitarne zewnętrzne",
+  //       to: "/instalacje-sanitarne-zewnetrzne",
+  //       routeName: "instalacje-sanitarne-zewnetrzne",
+  //     },
+  //     {
+  //       title: "Instalacje sanitarne wenętrzne",
+  //       to: "/instalacje-sanitarne-wewnetrzne",
+  //       routeName: "instalacje-sanitarne-wewnetrzne",
+  //     },
+  //     {
+  //       title: "Instalacje przemysłowe",
+  //       to: "/instalacje-przemyslowe",
+  //       routeName: "instalacje-przemyslowe",
+  //     },
+  //     {
+  //       title: "Usługi dźwigowe",
+  //       to: "/uslugi-dzwigowe",
+  //       routeName: "uslugi-dzwigowe",
+  //     },
+  //     {
+  //       title: "Wynajem mieszkań",
+  //       to: "/wynajem-mieszkan",
+  //       routeName: "wynajem-mieszkan",
+  //     },
+  //   ],
+  // },
   realizacje: {
     title: "Realizacje",
     to: "/realizacje",

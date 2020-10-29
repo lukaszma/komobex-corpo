@@ -1,32 +1,32 @@
 export const orderedWorkList = {
   work1: {
     order: 1,
-    title: "WORK 1",
+    title: "Arena Gliwice",
     to: "/realizacje/ukonczone/arena-gliwice",
   },
   work2: {
     order: 2,
-    title: "WORK 2",
-    to: "/realizacje/ukonczone/arena-gliwice",
+    title: "MCK",
+    to: "/realizacje/ukonczone/mck",
   },
   work3: {
     order: 3,
-    title: "WORK 3",
-    to: "/realizacje/ukonczone/arena-gliwice",
+    title: "Wroclavia",
+    to: "/realizacje/ukonczone/wroclavia",
   },
   work4: {
     order: 4,
-    title: "WORK 4",
-    to: "/realizacje/ukonczone/arena-gliwice",
+    title: "Stadion Zabrze",
+    to: "/realizacje/ukonczone/stadion-zabrze",
   },
   work5: {
     order: 5,
-    title: "WORK 5",
-    to: "/realizacje/ukonczone/arena-gliwice",
+    title: "Zespół pieśni i tańca śląsk",
+    to: "/realizacje/ukonczone/zespol-piesni-i-tanca-slask",
   },
   work6: {
     order: 6,
-    title: "WORK 6",
-    to: "/realizacje/ukonczone/arena-gliwice",
+    title: "Face 2 Face",
+    to: "/realizacje/ukonczone/face-2-face",
   },
 }

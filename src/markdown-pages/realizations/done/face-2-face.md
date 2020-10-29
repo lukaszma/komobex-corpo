@@ -5,11 +5,8 @@ title: "Face 2 Face"
 imagesDirectory: "face-2-face"
 slug: face-2-face
 tags: [C.O, WOD-KAN]
-thumb: "../../../images/realizations/arena-gliwice/DSC_0038.jpg"
+thumb: "../../../images/realizations/face-2-face/IMG_20190716_180727.jpg"
 pdf: "../../../assets/pdfs/arena-gliwice.pdf"
 ---
 
 # Face 2 Face
-
-W ramach projektu Face 2 Face wykonaliśmy szereg instalacji 
-ten tekst został wygenerowany z pliku w którym można formatować tekst

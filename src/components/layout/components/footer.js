@@ -2,6 +2,11 @@ import React from "react"
 import CustomLink from "@components/customLink/customLink"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
+
+const Image = styled(Img)`
+  margin-bottom: 30px;
+`
 
 const Footer = () => {
   const images = useStaticQuery(graphql`
@@ -27,13 +32,13 @@ const Footer = () => {
           <div className="col-md-3 col-sm-6">
             <section className="widget">
               <CustomLink to="/">
-                <Img
+                <Image
                   className="img-responsive"
                   fluid={images.logo.childImageSharp.fluid}
                 />
               </CustomLink>
               <p>
-                Wiedzę oraz technologię doskonalimy już od ponad 25 lat
+                Wiedzę oraz technologię doskonalimy już od ponad 29 lat
                 wykonując projekty na terenie całego kraju, zdobywając tym samym
                 zaufanie naszych Klientów.
               </p>
@@ -47,9 +52,9 @@ const Footer = () => {
                 <li>
                   <CustomLink to="/o-firmie">O firmie</CustomLink>
                 </li>
-                <li>
+                {/* <li>
                   <CustomLink to="/uslugi">Usługi</CustomLink>
-                </li>
+                </li> */}
                 <li>
                   <CustomLink to="/realizacje">Realizacje</CustomLink>
                 </li>
@@ -60,7 +65,7 @@ const Footer = () => {
             </section>
           </div>
 
-          <div className="col-md-3 col-sm-6">
+          {/* <div className="col-md-3 col-sm-6">
             <section className="widget">
               <h3 className="widget-title">Nasze usługi</h3>
               <ul>
@@ -92,12 +97,12 @@ const Footer = () => {
                 </li>
               </ul>
             </section>
-          </div>
+          </div> */}
 
           <div className="col-md-3 col-sm-6">
             <section className="widget">
               <h3 className="widget-title">Skontaktuj się z nami</h3>
-              <p>Dekabrystów 41 42-200 Częstochowa</p>
+              <p>Srebrna 61/63 42-200 Częstochowa</p>
               <p>
                 komobexinel@post.pl
                 <br />

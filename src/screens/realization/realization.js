@@ -1,50 +1,50 @@
-import React, { useState } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import ImageGallery from "react-image-gallery"
 import { map } from "lodash"
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
-import { Document, Page } from "react-pdf"
-import { ReferenceTab, Button } from "./style"
+// import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
+// import { Document, Page } from "react-pdf"
+// import { ReferenceTab, Button } from "./style"
 
-const RealizationScreen = ({ html, images, pdf }) => {
+const RealizationScreen = ({ html, images }) => {
   const mappedImages = map(images.edges, edge => ({
     original: edge.node.childImageSharp.fluid.src,
     thumbnail: edge.node.childImageSharp.fluid.src,
     srcSet: edge.node.childImageSharp.fluid.srcSet,
   }))
 
-  const [numPages, setNumPages] = useState(null)
-  const [pageNumber, setPageNumber] = useState(1)
+  // const [numPages, setNumPages] = useState(null)
+  // const [pageNumber, setPageNumber] = useState(1)
 
-  const onDocumentLoadSuccess = ({ numPages }) => {
-    setNumPages(numPages)
-  }
+  // const onDocumentLoadSuccess = ({ numPages }) => {
+  //   setNumPages(numPages)
+  // }
 
-  const setPreviousePage = () => {
-    if (pageNumber > 1) {
-      setPageNumber(pageNumber - 1)
-    }
-  }
+  // const setPreviousePage = () => {
+  //   if (pageNumber > 1) {
+  //     setPageNumber(pageNumber - 1)
+  //   }
+  // }
 
-  const setNextPage = () => {
-    if (pageNumber < numPages) {
-      setPageNumber(pageNumber + 1)
-    }
-  }
+  // const setNextPage = () => {
+  //   if (pageNumber < numPages) {
+  //     setPageNumber(pageNumber + 1)
+  //   }
+  // }
 
   return (
     <div className="container">
-      <Tabs style={{ margin: "20px 0" }}>
-        <TabList>
+      {/* <Tabs style={{ margin: "20px 0" }}> */}
+      {/* <TabList>
           <Tab>Zdjęcia</Tab>
           <Tab>Referencja</Tab>
-        </TabList>
+        </TabList> */}
 
-        <TabPanel>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
-          <ImageGallery items={mappedImages} />
-        </TabPanel>
-        <ReferenceTab>
+      {/* <TabPanel> */}
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <ImageGallery items={mappedImages} />
+      {/* </TabPanel> */}
+      {/* <ReferenceTab>
           <div
             className="descriptionHtml"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -75,8 +75,8 @@ const RealizationScreen = ({ html, images, pdf }) => {
               </div>
             )}
           </div>
-        </ReferenceTab>
-      </Tabs>
+        </ReferenceTab> */}
+      {/* </Tabs> */}
     </div>
   )
 }

@@ -21,11 +21,11 @@ const Map = () => {
         >
           {typeof window !== "undefined" && (
             <LeafletMap
-              center={[50.82654, 19.11719]}
+              center={[50.821955, 19.161112]}
               zoom={16}
               style={{ height: "100%" }}
             >
-              <Marker position={[50.82654, 19.11719]} />
+              <Marker position={[50.821955, 19.161112]} />
               <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             </LeafletMap>
           )}
