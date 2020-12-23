@@ -62,6 +62,9 @@ const Footer = () => {
                   <CustomLink to="/referencje">Referencje</CustomLink>
                 </li>
                 <li>
+                  <CustomLink to="/nieruchomosci">Nieruchomości</CustomLink>
+                </li>
+                <li>
                   <CustomLink to="/kontakt">Kontakt</CustomLink>
                 </li>
               </ul>

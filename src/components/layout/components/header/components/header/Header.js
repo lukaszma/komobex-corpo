@@ -124,6 +124,13 @@ const Header = ({ currentRouteOptions, isHeaderSticky, onMenuClick }) => {
               >
                 <CustomLink to="/referencje">Referencje</CustomLink>
               </li>
+              <li
+                className={classnames("menu-item", {
+                  "current-menu-item": currentRouteOptions.to === "/nieruchomosci",
+                })}
+              >
+                <CustomLink to="/nieruchomosci">Nieruchomości</CustomLink>
+              </li>
 
               <li
                 className={classnames("menu-item", {

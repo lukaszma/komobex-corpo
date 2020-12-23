@@ -37,13 +37,13 @@ module.exports = {
         path: `${__dirname}/src/images/aboutPage`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `realizations-pdfs`,
-    //     path: `${__dirname}/src/assets/pdfs`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pdfs`,
+        path: `${__dirname}/src/assets/pdfs`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -97,10 +97,10 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-react-leaflet',
+      resolve: "gatsby-plugin-react-leaflet",
       options: {
-        linkStyles: true // (default: true) Enable/disable loading stylesheets via CDN
-      }
+        linkStyles: true, // (default: true) Enable/disable loading stylesheets via CDN
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

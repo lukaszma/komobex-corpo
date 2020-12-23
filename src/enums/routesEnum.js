@@ -35,6 +35,15 @@ export const routes = {
     },
     hasBreadcrumbs: true,
   },
+  nieruchomosci: {
+    title: "Nieruchomości",
+    to: "/nieruchomosci",
+    pageTitle: {
+      title: "Nieruchomości",
+      subtitle: "Dokumenty",
+    },
+    hasBreadcrumbs: true,
+  },
   // uslugi: {
   //   title: "Usługi",
   //   to: "/uslugi",
