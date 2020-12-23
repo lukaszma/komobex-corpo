@@ -5,9 +5,6 @@ import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
 const Properties = ({ data }) => {
-  // eslint-disable-next-line no-undef
-  console.log(data)
-
   return (
     <div id="home" className="home">
       <Layout>
