@@ -35,12 +35,12 @@ export const routes = {
     },
     hasBreadcrumbs: true,
   },
-  nieruchomosci: {
-    title: "Nieruchomości",
-    to: "/nieruchomosci",
+  wydzielenie_spolki: {
+    title: "Wydzielenie spółki",
+    to: "/wydzielenie_spolki",
     pageTitle: {
-      title: "Nieruchomości",
-      subtitle: "Dokumenty",
+      title: "Wydzielenie spółki",
+      subtitle: "Podział przez wydzielenie nieruchomości",
     },
     hasBreadcrumbs: true,
   },

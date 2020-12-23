@@ -126,10 +126,13 @@ const Header = ({ currentRouteOptions, isHeaderSticky, onMenuClick }) => {
               </li>
               <li
                 className={classnames("menu-item", {
-                  "current-menu-item": currentRouteOptions.to === "/nieruchomosci",
+                  "current-menu-item":
+                    currentRouteOptions.to === "/wydzielenie_spolki",
                 })}
               >
-                <CustomLink to="/nieruchomosci">Nieruchomości</CustomLink>
+                <CustomLink to="/wydzielenie_spolki">
+                  Wydzielenie spółki
+                </CustomLink>
               </li>
 
               <li
