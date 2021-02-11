@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 
 const RealizationsInProgress = ({ data }) => (
   <div id="realizations-in-progress" className="realizations-in-progress">
-    <Layout>
+    <Layout pageTitle="Realizacje w trakcie">
       <Cards
         realizationsList={data.allMarkdownRemark.edges}
         prefix="w-trakcie"

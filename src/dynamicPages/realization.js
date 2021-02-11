@@ -10,7 +10,7 @@ const Realization = ({ data }) => {
 
   return (
     <div id="home" className="home">
-      <Layout>
+      <Layout pageTitle={frontmatter.title}>
         <RealizationScreen
           frontmatter={frontmatter}
           html={html}

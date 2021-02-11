@@ -4,7 +4,7 @@ import { AboutScreen } from "@screens/about/about"
 
 const About = () => (
   <div id="home" className="home">
-    <Layout>
+    <Layout pageTitle="O Firmie">
       <AboutScreen />
     </Layout>
   </div>

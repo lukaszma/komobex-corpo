@@ -6,7 +6,7 @@ import Layout from "@components/layout/layout"
 const ServicesScreen = ({ children }) => (
   <>
     <div id="home" className="home">
-      <Layout>
+      <Layout pageTitle="Usługi">
         <div className="content-section">
           <div className="container">
             <div className="row">

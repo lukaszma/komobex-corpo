@@ -3,7 +3,7 @@ const path = require("path")
 module.exports = {
   siteMetadata: {
     title: `Komobex Inel`,
-    description: ``,
+    description: `Instalacje i sieci zewnętrzne, instalacje wenętrzne, instalacje przemysłowe`,
     author: `@softo`,
   },
   plugins: [

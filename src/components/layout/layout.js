@@ -7,7 +7,7 @@ import { getLinkDetailsByRoute } from "../../enums/routesEnum"
 import { PageTitle } from "@components/pageTitle"
 import { Breadcrumbs } from "@components/breadcrumbs/breadcrumbs"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageTitle }) => {
   const [isHeaderSticky, setIsHeaderSticky] = useState(false)
 
   useEffect(() => {
@@ -30,8 +30,6 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const pageTitle = data.site.siteMetadata.title
-
   return (
     <Location>
       {({ location }) => {
@@ -40,7 +38,7 @@ const Layout = ({ children }) => {
         )
         return (
           <>
-            <SEO title={pageTitle} />
+            <SEO pageTitle={pageTitle} />
             <Header
               currentRouteOptions={currentRouteOptions}
               isHeaderSticky={isHeaderSticky}
@@ -69,6 +67,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  pageTitle: PropTypes.string.isRequired,
 }
 
 export default Layout

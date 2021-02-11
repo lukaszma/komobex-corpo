@@ -4,7 +4,7 @@ import { MainPage } from "@screens/mainPage/mainPage"
 
 const IndexPage = () => (
   <div id="home" className="home">
-    <Layout>
+    <Layout pageTitle="">
       <MainPage />
     </Layout>
   </div>

@@ -7,7 +7,7 @@ import PropTypes from "prop-types"
 
 const RealizationsDone = ({ data }) => (
   <div id="realizations-done" className="realizations-done">
-    <Layout>
+    <Layout pageTitle="Realizacje ukończone">
       <Cards
         realizationsList={data.allMarkdownRemark.edges}
         prefix="ukonczone"

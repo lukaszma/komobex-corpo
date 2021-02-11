@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, pageTitle }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -17,7 +17,6 @@ function SEO({ description, lang, meta, title }) {
       }
     `
   )
-
   const metaDescription = description || site.siteMetadata.description
 
   return (
@@ -25,8 +24,7 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      // title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={`Komobex-Inel${pageTitle?.length ? ` - ${pageTitle}` : ""}`}
       meta={[
         {
           name: `description`,
@@ -34,7 +32,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: pageTitle,
         },
         {
           property: `og:description`,
@@ -54,7 +52,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: pageTitle,
         },
         {
           name: `twitter:description`,
@@ -81,7 +79,7 @@ function SEO({ description, lang, meta, title }) {
           "@context": "https://schema.org",
           "@type": "Organization",
           url: "https://www.komobexinel.pl",
-          // logo: "http://www.example.com/images/logo.png",
+          logo: "https://www.komobexinel.pl/logo.png",
         })}
       </script>
     </Helmet>
@@ -92,13 +90,14 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  pageTitle: ``,
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  pageTitle: PropTypes.string.isRequired,
 }
 
 export default SEO

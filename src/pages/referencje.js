@@ -4,7 +4,7 @@ import { ReferenceScreen } from "@screens/reference/reference"
 
 const Reference = () => (
   <div id="home" className="home">
-    <Layout>
+    <Layout pageTitle="Referencje">
       <ReferenceScreen />
     </Layout>
   </div>

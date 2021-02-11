@@ -7,7 +7,7 @@ import { graphql } from "gatsby"
 const Properties = ({ data }) => {
   return (
     <div id="home" className="home">
-      <Layout>
+      <Layout pageTitle="Wydzielenie Spółki">
         <PropertiesScreen publicUrl={data.file.publicURL} />
       </Layout>
     </div>

@@ -4,7 +4,7 @@ import { ContactScreen } from "@screens/contact/contact"
 
 const Contact = () => (
   <div id="home" className="home">
-    <Layout>
+    <Layout pageTitle="Kontakt">
       <ContactScreen />
     </Layout>
   </div>

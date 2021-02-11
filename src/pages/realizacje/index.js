@@ -8,7 +8,7 @@ import { Options } from "@screens/realizations/components"
 
 const Realizations = ({ data }) => (
   <div id="realizations" className="realizations">
-    <Layout>
+    <Layout pageTitle="Realizacje">
       <Options />
     </Layout>
   </div>
