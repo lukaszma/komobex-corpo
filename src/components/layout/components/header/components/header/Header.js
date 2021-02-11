@@ -2,25 +2,25 @@ import React from "react"
 import CustomLink from "@components/customLink/customLink"
 import classnames from "classnames"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+// import { useStaticQuery, graphql } from "gatsby"
+// import Img from "gatsby-image"
 
 const Header = ({ currentRouteOptions, isHeaderSticky, onMenuClick }) => {
-  const images = useStaticQuery(graphql`
-    query {
-      logo: file(
-        sourceInstanceName: { eq: "main-page-images" }
-        name: { eq: "logo" }
-      ) {
-        name
-        childImageSharp {
-          fluid(maxWidth: 1200, quality: 100) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
-        }
-      }
-    }
-  `)
+  // const images = useStaticQuery(graphql`
+  //   query {
+  //     logo: file(
+  //       sourceInstanceName: { eq: "main-page-images" }
+  //       name: { eq: "logo" }
+  //     ) {
+  //       name
+  //       childImageSharp {
+  //         fluid(maxWidth: 1200, quality: 100) {
+  //           ...GatsbyImageSharpFluid_noBase64
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <header
@@ -34,10 +34,7 @@ const Header = ({ currentRouteOptions, isHeaderSticky, onMenuClick }) => {
         <div style={{ width: "200px" }} className="site-branding">
           <h1 className="site-title title-image">
             <CustomLink to="/">
-              <Img
-                className="img-responsive"
-                fluid={images.logo.childImageSharp.fluid}
-              />
+              <img className="img-responsive" src={'../../../../../logo.png'} />
             </CustomLink>
           </h1>
         </div>

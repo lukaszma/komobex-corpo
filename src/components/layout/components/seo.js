@@ -25,7 +25,7 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      // title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
@@ -76,6 +76,14 @@ function SEO({ description, lang, meta, title }) {
       {/* <script src={withPrefix("plugins/owl.carousel.min.js")} type="text/javascript"/> */}
       {/* <script src={withPrefix("plugins/parallax.min.js")} type="text/javascript"/> */}
       {/* <script src={withPrefix("js/script.min.js")} type="text/javascript"/> */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          url: "https://www.komobexinel.pl",
+          // logo: "http://www.example.com/images/logo.png",
+        })}
+      </script>
     </Helmet>
   )
 }

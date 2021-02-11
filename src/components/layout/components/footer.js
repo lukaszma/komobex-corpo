@@ -13,7 +13,7 @@ const Footer = () => {
     query {
       logo: file(
         sourceInstanceName: { eq: "main-page-images" }
-        name: { eq: "logo" }
+        name: { eq: "logo_white" }
       ) {
         name
         childImageSharp {
