@@ -76,10 +76,35 @@ function SEO({ description, lang, meta, pageTitle }) {
       {/* <script src={withPrefix("js/script.min.js")} type="text/javascript"/> */}
       <script type="application/ld+json">
         {JSON.stringify({
-          "@context": "https://schema.org",
+          "@context": "http://schema.org",
           "@type": "Organization",
-          url: "https://www.komobexinel.pl",
-          logo: "https://www.komobexinel.pl/logo.png",
+          name: "P.P.H. Komobex-Inel Sp. z o.o.",
+          image: "https://www.komobexinel.pl/logo.png",
+          telephone: "34 322 65 11",
+          email: "komobexinel@post.pl",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Srebrna 61/63",
+            addressLocality: "Częstochowa",
+            addressCountry: "Polska",
+            postalCode: "42-200",
+          },
+          openingHoursSpecification: {
+            "@type": "OpeningHoursSpecification",
+            opens: "07:00",
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            closes: "15:00",
+            name: "Godziny otwarcia biura",
+            "@id": "https://www.komobexinel.pl/kontakt",
+          },
+          url: "https://www.komobexinel.pl/",
+          geo: {
+            "@type": "GeoCoordinates",
+            longitude: "19.16164",
+            latitude: "50.82191",
+            name: "Częstochowa",
+            "@id": "https://www.komobexinel.pl/kontakt",
+          },
         })}
       </script>
     </Helmet>
