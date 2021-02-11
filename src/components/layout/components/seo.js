@@ -77,7 +77,7 @@ function SEO({ description, lang, meta, pageTitle }) {
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "http://schema.org",
-          "@type": "Organization",
+          "@type": "LocalBusiness",
           name: "P.P.H. Komobex-Inel Sp. z o.o.",
           image: "https://www.komobexinel.pl/logo.png",
           telephone: "34 322 65 11",
