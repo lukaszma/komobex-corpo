@@ -22,7 +22,7 @@
     "gatsby-plugin-transition-link": "^1.18.0",
     "gatsby-remark-images": "^3.3.3",
     "gatsby-source-filesystem": "^2.2.4",
-    "gatsby-transformer-remark": "^2.8.4",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.2",
     "google-map-react": "^1.1.7",
     "intersection-observer": "^0.10.0",
