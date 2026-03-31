@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { map, sortBy } from "lodash"
 import { orderedWorkList } from "./orderedWorkList"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import CustomLink from "@components/customLink/customLink"
 import styled from "styled-components"
 
-const Image = styled(Img)`
+const Image = styled(GatsbyImage)`
   height: 300px;
 `
 
@@ -28,9 +28,7 @@ export const Work = () => {
           node {
             name
             childImageSharp {
-              fluid(maxWidth: 600, quality: 100) {
-                ...GatsbyImageSharpFluid_noBase64
-              }
+              gatsbyImageData(width: 600, quality: 100, placeholder: NONE)
             }
           }
         }
@@ -42,7 +40,7 @@ export const Work = () => {
     const list = map(images.serviceImages.edges, edge => {
       const options = orderedWorkList[edge.node.name]
       return {
-        fluid: edge.node.childImageSharp.fluid,
+        imageData: edge.node.childImageSharp,
         title: options.title,
         order: options.order,
         to: options.to,
@@ -72,7 +70,7 @@ export const Work = () => {
                 <ContainerItem key={work.order} className="work-item">
                   <CustomLink to={work.to} title={work.title}>
                     <div className="work-item-image">
-                      <Image fluid={work.fluid} />
+                      <Image image={getImage(work.imageData)} alt={work.title} />
                     </div>
                     <div className="work-item-info">
                       <h4 className="work-item-title">{work.title}</h4>

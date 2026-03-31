@@ -3,10 +3,10 @@ import React from "react"
 import { Card, CardsWrapper } from "./styles"
 import CustomLink from "@components/customLink/customLink"
 import PropTypes from "prop-types"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import { sortBy } from "lodash"
-const Image = styled(Img)`
+const Image = styled(GatsbyImage)`
   height: 200px;
 `
 
@@ -32,10 +32,10 @@ const Cards = ({ realizationsList, prefix }) => {
                   <div className="image-holder image--landscape">
                     {realization.node.frontmatter.thumb && (
                       <Image
-                        fluid={
+                        image={getImage(
                           realization.node.frontmatter.thumb.childImageSharp
-                            .fluid
-                        }
+                        )}
+                        alt={realization.node.frontmatter.title}
                       />
                     )}
                   </div>

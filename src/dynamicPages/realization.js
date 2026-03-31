@@ -40,9 +40,7 @@ export const pageQuery = graphql`
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 1200, quality: 100) {
-              ...GatsbyImageSharpFluid_noBase64
-            }
+            gatsbyImageData(width: 1200, quality: 100, placeholder: NONE)
           }
         }
       }

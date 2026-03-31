@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import BackgroundImage from "gatsby-background-image"
 
 export const StyledOptions = styled.div`
   min-height: 500px;
@@ -15,7 +14,6 @@ export const StyledOptions = styled.div`
 
   .image {
     cursor: pointer;
-    background-size: cover;
     position: relative;
     overflow: hidden;
     width: 50%;
@@ -35,9 +33,9 @@ export const StyledOptions = styled.div`
     }
   }
 `
-export const StyledBackgroundImage = styled(BackgroundImage)`
+
+export const LeftBackgroundImage = styled.section`
   cursor: pointer;
-  background-size: cover;
   position: relative;
   overflow: hidden;
   width: 50%;
@@ -45,28 +43,10 @@ export const StyledBackgroundImage = styled(BackgroundImage)`
   display: inline-block;
   color: white;
   transition: filter 0.2s, color 0.2s;
-
-  &:hover {
-    filter: saturate(40%) brightness(160%);
-  }
-
-  &.left-image {
-    clip-path: polygon(0 0, 100% 0, 59% 100%, 0 100%);
-    left: 10%;
-    float: left;
-  }
-
-  &.right-image {
-    clip-path: polygon(41% 0, 100% 0, 100% 100%, 0 100%);
-    left: -10%;
-    text-align: right;
-  }
-`
-
-export const LeftBackgroundImage = styled(BackgroundImage)`
   clip-path: polygon(0 0, 100% 0, 59% 100%, 0 100%);
   left: 10%;
   float: left;
+
   &:hover {
     filter: saturate(40%) brightness(160%);
   }
@@ -74,9 +54,19 @@ export const LeftBackgroundImage = styled(BackgroundImage)`
   .label {
     top: 5%;
     position: relative;
+    z-index: 1;
   }
 `
-export const RightBackgroundImage = styled(BackgroundImage)`
+
+export const RightBackgroundImage = styled.section`
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  color: white;
+  transition: filter 0.2s, color 0.2s;
   clip-path: polygon(41% 0, 100% 0, 100% 100%, 0 100%);
   left: -10%;
   text-align: right;
@@ -89,5 +79,6 @@ export const RightBackgroundImage = styled(BackgroundImage)`
     bottom: 5%;
     right: 2%;
     position: absolute;
+    z-index: 1;
   }
 `

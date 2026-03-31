@@ -9,7 +9,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/in-progress/" } }
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { frontmatter: { date: DESC } }
         limit: 1000
       ) {
         edges {
@@ -29,7 +29,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/done/" } }
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { frontmatter: { date: DESC } }
         limit: 1000
       ) {
         edges {

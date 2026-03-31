@@ -6,6 +6,7 @@ import {
   RightBackgroundImage,
 } from "./styles"
 import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import CustomLink from "@components/customLink/customLink"
 
 export const Options = () => {
@@ -18,9 +19,7 @@ export const Options = () => {
           node {
             name
             childImageSharp {
-              fluid(maxWidth: 800, quality: 100) {
-                ...GatsbyImageSharpFluid_noBase64
-              }
+              gatsbyImageData(width: 800, quality: 100, placeholder: NONE)
             }
           }
         }
@@ -40,23 +39,25 @@ export const Options = () => {
     <StyledOptions>
       <div className="image-container">
         <CustomLink to="/realizacje/ukonczone">
-          <LeftBackgroundImage
-            Tag="section"
-            className="image"
-            fluid={doneImage.node.childImageSharp.fluid}
-            backgroundColor={`#040e18`}
-          >
+          <LeftBackgroundImage className="image">
+            <GatsbyImage
+              image={getImage(doneImage.node.childImageSharp)}
+              alt="ukończone realizacje"
+              style={{ position: "absolute", inset: 0, height: "100%" }}
+              objectFit="cover"
+            />
             <div className="label">UKOŃCZONE</div>
           </LeftBackgroundImage>
         </CustomLink>
 
         <CustomLink to="/realizacje/w-trakcie">
-          <RightBackgroundImage
-            Tag="section"
-            className="image"
-            fluid={inProgressImage.node.childImageSharp.fluid}
-            backgroundColor={`#040e18`}
-          >
+          <RightBackgroundImage className="image">
+            <GatsbyImage
+              image={getImage(inProgressImage.node.childImageSharp)}
+              alt="realizacje w trakcie"
+              style={{ position: "absolute", inset: 0, height: "100%" }}
+              objectFit="cover"
+            />
             <div className="label">W TRAKCIE</div>
           </RightBackgroundImage>
         </CustomLink>

@@ -1,10 +1,10 @@
 import React from "react"
 import CustomLink from "@components/customLink/customLink"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
-const Image = styled(Img)`
+const Image = styled(GatsbyImage)`
   margin-bottom: 30px;
 `
 
@@ -17,9 +17,7 @@ const Footer = () => {
       ) {
         name
         childImageSharp {
-          fluid(maxWidth: 1200, quality: 100) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
+          gatsbyImageData(width: 1200, quality: 100, placeholder: NONE)
         }
       }
     }
@@ -34,7 +32,8 @@ const Footer = () => {
               <CustomLink to="/">
                 <Image
                   className="img-responsive"
-                  fluid={images.logo.childImageSharp.fluid}
+                  image={getImage(images.logo.childImageSharp)}
+                  alt="logo"
                 />
               </CustomLink>
               <p>

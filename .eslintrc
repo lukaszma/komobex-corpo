@@ -1,7 +1,18 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
   "rules": {
     "strict": 0
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
   },
   "globals": {
     "window": true

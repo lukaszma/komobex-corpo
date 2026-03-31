@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
@@ -12,7 +12,7 @@ const Section = styled.div`
   }
 `
 
-const Image = styled(Img)`
+const Image = styled(GatsbyImage)`
   height: 300px;
 `
 
@@ -39,15 +39,13 @@ export const ContentSection = () => {
     query {
       aboutImages: allFile(
         filter: { sourceInstanceName: { eq: "about-page-images" } }
-        sort: { fields: name }
+        sort: { name: ASC }
       ) {
         edges {
           node {
             name
             childImageSharp {
-              fluid(maxWidth: 1200, quality: 100) {
-                ...GatsbyImageSharpFluid_noBase64
-              }
+              gatsbyImageData(width: 1200, quality: 100, placeholder: NONE)
             }
           }
         }
@@ -60,7 +58,7 @@ export const ContentSection = () => {
         <Section className="row">
           <div className="col-sm-6">
             <Image
-              fluid={images.aboutImages.edges[0].node.childImageSharp.fluid}
+              image={getImage(images.aboutImages.edges[0].node.childImageSharp)}
               alt={images.aboutImages.edges[0].node.name}
             />
           </div>
@@ -90,7 +88,7 @@ export const ContentSection = () => {
           </div>
           <div className="col-sm-6">
             <Image
-              fluid={images.aboutImages.edges[1].node.childImageSharp.fluid}
+              image={getImage(images.aboutImages.edges[1].node.childImageSharp)}
               alt={images.aboutImages.edges[1].node.name}
             />
           </div>
@@ -147,7 +145,7 @@ export const ContentSection = () => {
           </div>
           <div className="col-sm-6">
             <Image
-              fluid={images.aboutImages.edges[2].node.childImageSharp.fluid}
+              image={getImage(images.aboutImages.edges[2].node.childImageSharp)}
               alt={images.aboutImages.edges[2].node.name}
             />
           </div>

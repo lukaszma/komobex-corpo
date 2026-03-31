@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export const About = () => {
   const images = useStaticQuery(graphql`
@@ -11,9 +11,7 @@ export const About = () => {
       ) {
         name
         childImageSharp {
-          fluid(maxWidth: 1200, quality: 100) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
+          gatsbyImageData(width: 1200, quality: 100, placeholder: NONE)
         }
       }
     }
@@ -23,10 +21,13 @@ export const About = () => {
     <div id="about" className="block-section image-block bg-white">
       <div className="container-fluid container-no-padding">
         <div className="row row-no-margin">
-          <div className="image-block-item col-md-6 col-sm-5 col-xs-12">
-            <BackgroundImage
+          <div className="image-block-item col-md-6 col-sm-5 col-xs-12" style={{ position: "relative", overflow: "hidden" }}>
+            <GatsbyImage
               className="image-block-item-background"
-              fluid={images.aboutImage.childImageSharp.fluid}
+              image={getImage(images.aboutImage.childImageSharp)}
+              alt="o firmie"
+              style={{ position: "absolute", inset: 0, height: "100%" }}
+              objectFit="cover"
             />
           </div>
         </div>

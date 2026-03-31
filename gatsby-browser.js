@@ -12,10 +12,9 @@ import "./node_modules/react-image-gallery/styles/css/image-gallery.css"
 import 'react-tabs/style/react-tabs.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { pdfjs } from "react-pdf"
 
-export const onClientEntry = () => {
-    // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
-    if (!(`IntersectionObserver` in window)) {
-      import(`intersection-observer`)
-    }
-  }
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.min.mjs",
+  import.meta.url,
+).toString()

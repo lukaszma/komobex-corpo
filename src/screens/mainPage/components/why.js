@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { find } from "lodash"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export const Why = () => {
   const images = useStaticQuery(graphql`
@@ -16,9 +16,7 @@ export const Why = () => {
           node {
             name
             childImageSharp {
-              fluid(maxWidth: 300, quality: 100) {
-                ...GatsbyImageSharpFluid_noBase64
-              }
+              gatsbyImageData(width: 300, quality: 100, placeholder: NONE)
             }
           }
         }
@@ -29,11 +27,11 @@ export const Why = () => {
   const step1Image = find(
     images.serviceImages.edges,
     edge => edge.node.name === "wroclavia"
-  ).node.childImageSharp.fluid
+  ).node.childImageSharp
   const step3Image = find(
     images.serviceImages.edges,
     edge => edge.node.name === "certyfikat"
-  ).node.childImageSharp.fluid
+  ).node.childImageSharp
 
   return (
     <div id="why" className="why content-section bg-grey">
@@ -48,7 +46,7 @@ export const Why = () => {
         <div className="row">
           <div className="col-md-3 col-sm-6">
             <div className="process-item highlight text-center">
-              <Img className="img-responsive" fluid={step1Image} />
+              <GatsbyImage className="img-responsive" image={getImage(step1Image)} alt="zaufanie" />
               <div className="process-item-content">
                 <span className="process-item-number">1</span>
                 <h3 className="process-item-title">ZAUFANIE</h3>
@@ -81,7 +79,7 @@ export const Why = () => {
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="process-item highlight text-center">
-              <Img className="img-responsive" fluid={step3Image} />
+              <GatsbyImage className="img-responsive" image={getImage(step3Image)} alt="wiarygodność" />
               <div className="process-item-content">
                 <span className="process-item-number">3</span>
                 <h3 className="process-item-title">WIARYGODNOŚĆ</h3>

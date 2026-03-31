@@ -20,7 +20,7 @@ export const query = graphql`
   query {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/done/" } }
-      sort: { fields: frontmatter___date }
+      sort: { frontmatter: { date: ASC } }
     ) {
       edges {
         node {
@@ -30,9 +30,7 @@ export const query = graphql`
             order
             thumb {
               childImageSharp {
-                fluid(maxWidth: 400, quality: 100) {
-                  ...GatsbyImageSharpFluid_noBase64
-                }
+                gatsbyImageData(width: 400, quality: 100, placeholder: NONE)
               }
             }
           }

@@ -5,6 +5,7 @@ import { StyledHeader, HeroContainer } from "./styles"
 import Menu from "@components/menu/menu"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Header as PageHeader } from "./components"
 
 const Header = ({ isHeaderSticky, currentRouteOptions }) => {
@@ -26,9 +27,7 @@ const Header = ({ isHeaderSticky, currentRouteOptions }) => {
       ) {
         name
         childImageSharp {
-          fluid(maxWidth: 1200, quality: 100) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
+          gatsbyImageData(width: 1200, quality: 100, placeholder: NONE)
         }
       }
     }
@@ -42,26 +41,17 @@ const Header = ({ isHeaderSticky, currentRouteOptions }) => {
         onMenuClick={onMenuClick}
       />
       {currentRouteOptions.hasHeroImage && <HeroContainer
-        style={
-          currentRouteOptions.hasHeroImage
-            ? {
-                backgroundAttachment: "fixed",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "top",
-                height: "100vh",
-              }
-            : {}
-        }
-        fluid={
-          currentRouteOptions.hasHeroImage
-            ? images.heroImage.childImageSharp.fluid
-            : {}
-        }
         className={classnames("header", {
           "header-page": !currentRouteOptions.hasHeroImage,
         })}
       >
+        <GatsbyImage
+          image={getImage(images.heroImage.childImageSharp)}
+          alt="hero"
+          style={{ position: "absolute", inset: 0, height: "100%" }}
+          objectFit="cover"
+          objectPosition="top center"
+        />
         <div className="main-page-arrow blink" onClick={onScroll}></div>
         {currentRouteOptions.hasHeroImage && (
           <div className="container">

@@ -1,7 +1,7 @@
 import React from "react"
 import Slider from "react-slick"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 const CustomSlider = styled(Slider)`
@@ -83,9 +83,7 @@ export const Client = () => {
           node {
             name
             childImageSharp {
-              fluid(maxWidth: 300, quality: 100) {
-                ...GatsbyImageSharpFluid_noBase64
-              }
+              gatsbyImageData(width: 300, quality: 100, placeholder: NONE)
             }
           }
         }
@@ -102,7 +100,7 @@ export const Client = () => {
       <CustomSlider {...settings}>
         {images.serviceImages.edges.map(edge => (
           <div className="custom-slick-item" key={edge.node.name}>
-            <Img fluid={edge.node.childImageSharp.fluid} />
+            <GatsbyImage image={getImage(edge.node.childImageSharp)} alt={edge.node.name} />
           </div>
         ))}
       </CustomSlider>

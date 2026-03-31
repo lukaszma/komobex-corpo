@@ -2,10 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 // import CustomLink from "@components/customLink/customLink"
 import { ServiceItemList } from "./styles"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
-const Image = styled(Img)`
+const Image = styled(GatsbyImage)`
   height: 300px;
 `
 
@@ -19,7 +19,7 @@ const ServiceItem = ({ title, fluid, to, list }) => (
         </h2>
       </div>
       {/* <CustomLink to={to}> */}
-      <Image className="img-responsive" fluid={fluid} />
+      <Image className="img-responsive" image={getImage(fluid)} alt={title} />
       {/* </CustomLink> */}
 
       <div className="blog-entry-content">

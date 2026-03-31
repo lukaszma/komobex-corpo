@@ -16,9 +16,7 @@ export const Service = () => {
           node {
             name
             childImageSharp {
-              fluid(maxWidth: 800, quality: 100) {
-                ...GatsbyImageSharpFluid_noBase64
-              }
+              gatsbyImageData(width: 800, quality: 100, placeholder: NONE)
             }
           }
         }
@@ -29,15 +27,15 @@ export const Service = () => {
   const outsideImage = find(
     images.serviceImages.edges,
     edge => edge.node.name === "service1"
-  ).node.childImageSharp.fluid
+  ).node.childImageSharp
   const insideImage = find(
     images.serviceImages.edges,
     edge => edge.node.name === "service2"
-  ).node.childImageSharp.fluid
+  ).node.childImageSharp
   const industrialImage = find(
     images.serviceImages.edges,
     edge => edge.node.name === "service3"
-  ).node.childImageSharp.fluid
+  ).node.childImageSharp
 
   return (
     <div id="service" className="service content-section bg-white">

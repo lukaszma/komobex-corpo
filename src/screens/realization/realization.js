@@ -3,6 +3,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import ImageGallery from "react-image-gallery"
 import { map, filter } from "lodash"
+import { getSrc } from "gatsby-plugin-image"
 // import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 // import { Document, Page } from "react-pdf"
 // import { ReferenceTab, Button } from "./style"
@@ -11,9 +12,8 @@ const RealizationScreen = ({ html, images }) => {
   const mappedImages = map(
     filter(images.edges, e => e.node.childImageSharp),
     edge => ({
-      original: edge.node.childImageSharp?.fluid.src,
-      thumbnail: edge.node.childImageSharp?.fluid.src,
-      srcSet: edge.node.childImageSharp?.fluid.srcSet,
+      original: getSrc(edge.node.childImageSharp),
+      thumbnail: getSrc(edge.node.childImageSharp),
     })
   )
 
