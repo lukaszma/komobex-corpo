@@ -18,22 +18,16 @@ export const About = () => {
   `)
 
   return (
-    <div id="about" className="block-section image-block bg-white">
-      <div className="container-fluid container-no-padding">
-        <div className="row row-no-margin">
-          <div className="image-block-item col-md-6 col-sm-5 col-xs-12" style={{ position: "relative", overflow: "hidden" }}>
-            <GatsbyImage
-              className="image-block-item-background"
-              image={getImage(images.aboutImage.childImageSharp)}
-              alt="o firmie"
-              style={{ position: "absolute", inset: 0, height: "100%" }}
-              objectFit="cover"
-            />
-          </div>
-        </div>
-      </div>
+    <div id="about" className="block-section image-block bg-white" style={{ position: "relative" }}>
+      <GatsbyImage
+        className="image-block-item-background"
+        image={getImage(images.aboutImage.childImageSharp)}
+        alt="o firmie"
+        style={{ position: "absolute", inset: 0, width: "50%", height: "100%" }}
+        objectFit="cover"
+      />
 
-      <div className="container clear">
+      <div className="container clear" style={{ position: "relative" }}>
         <div className="row">
           <div className="col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-80-top padd-60-btm">
             <div className="section-title">
@@ -56,11 +50,6 @@ export const About = () => {
               jak: wszechstronny rozwój przedsiębiorstwa, wysoki poziom
               świadczonych usług oraz zadowolenie klienta
             </p>
-            {/* <p>
-              <Link className="button btn-danger popup-video" to="/uslugi">
-                <i className="fa fa-wrench"></i> Sprawdź nasze usługi
-              </Link>
-            </p> */}
           </div>
         </div>
       </div>

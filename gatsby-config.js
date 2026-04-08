@@ -40,13 +40,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pdfs`,
-        path: `${__dirname}/src/assets/pdfs`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: "realizations-options-images",
         path: `${__dirname}/src/images/realizations-options`,
       },
@@ -90,12 +83,6 @@ module.exports = {
       options: {
         fonts: [`open sans:400,300,700`],
         display: "swap",
-      },
-    },
-    {
-      resolve: "gatsby-plugin-react-leaflet",
-      options: {
-        linkStyles: true, // (default: true) Enable/disable loading stylesheets via CDN
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

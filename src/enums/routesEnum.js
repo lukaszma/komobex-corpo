@@ -35,15 +35,6 @@ export const routes = {
     },
     hasBreadcrumbs: true,
   },
-  wydzielenie_spolki: {
-    title: "Wydzielenie spółki",
-    to: "/wydzielenie_spolki",
-    pageTitle: {
-      title: "Wydzielenie spółki",
-      subtitle: "Podział przez wydzielenie nieruchomości",
-    },
-    hasBreadcrumbs: true,
-  },
   // uslugi: {
   //   title: "Usługi",
   //   to: "/uslugi",
